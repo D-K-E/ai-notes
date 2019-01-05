@@ -1,0 +1,83 @@
+1
+00:00:01,740 --> 00:00:05,200
+And the answer is yes.
+
+2
+00:00:05,200 --> 00:00:09,130
+F is independent of A. Well defined by our rules of the separation is
+
+3
+00:00:09,130 --> 00:00:13,405
+that F is dependent on D and A is dependent on D. But,
+
+4
+00:00:13,405 --> 00:00:18,285
+if you don't know D, you can't govern any dependency between A and F at all.
+
+5
+00:00:18,285 --> 00:00:20,485
+Now, if you do know D,
+
+6
+00:00:20,485 --> 00:00:22,360
+then F and A become dependent.
+
+7
+00:00:22,360 --> 00:00:27,580
+And the reason is B and E are dependent given D. And we can
+
+8
+00:00:27,580 --> 00:00:29,690
+transform this back into the dependency of A
+
+9
+00:00:29,690 --> 00:00:33,745
+and F because B and A are dependent, and E and F are dependent.
+
+10
+00:00:33,745 --> 00:00:37,690
+There's an active path between A and F,
+
+11
+00:00:37,690 --> 00:00:39,535
+which goes across here, and here,
+
+12
+00:00:39,535 --> 00:00:41,640
+because D is known.
+
+13
+00:00:41,640 --> 00:00:44,735
+Now if you know G, the same thing is true because G gives us knowledge about
+
+14
+00:00:44,735 --> 00:00:48,010
+D and D can be applied back to this path over here.
+
+15
+00:00:48,010 --> 00:00:49,090
+However, if you know H,
+
+16
+00:00:49,090 --> 00:00:50,225
+that's not the case.
+
+17
+00:00:50,225 --> 00:00:52,310
+So, H might tell us something about G,
+
+18
+00:00:52,310 --> 00:00:55,585
+but it doesn't tell us anything about D, and therefore,
+
+19
+00:00:55,585 --> 00:00:58,450
+we have no reason to close the path
+
+20
+00:00:58,450 --> 00:01:02,643
+between A and F. The path between A and F is still passive,
+
+21
+00:01:02,643 --> 00:01:05,070
+even though we have knowledge of H.

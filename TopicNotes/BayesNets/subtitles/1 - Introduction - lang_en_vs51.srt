@@ -1,0 +1,65 @@
+1
+00:00:00,270 --> 00:00:02,940
+Sebastian, why are Bayes Nets important?
+
+2
+00:00:02,940 --> 00:00:05,781
+&gt;&gt; They're one of the most amazing
+accomplishments of recent artificial
+
+3
+00:00:05,781 --> 00:00:06,910
+intelligence.
+
+4
+00:00:06,910 --> 00:00:10,510
+They take the idea of uncertainty and
+probability and
+
+5
+00:00:10,510 --> 00:00:12,900
+marry it with efficient structures.
+
+6
+00:00:12,900 --> 00:00:16,155
+So you don't have a big mumble jumble
+but you can really understand,
+
+7
+00:00:16,155 --> 00:00:20,014
+like what uncertain variable
+influences other uncertain variable.
+
+8
+00:00:20,014 --> 00:00:25,580
+A theory of the world using just
+Bayes Networks is really an amazing.
+
+9
+00:00:25,580 --> 00:00:28,870
+&gt;&gt; Well, I've been teaching AI for
+many years, I've found that listening to
+
+10
+00:00:28,870 --> 00:00:32,590
+Sebastian's lessons has really given
+me a better intuition for Bayes Nets.
+
+11
+00:00:33,690 --> 00:00:37,130
+As you go through these lessons,
+make sure to understand how to construct
+
+12
+00:00:37,130 --> 00:00:39,080
+a Bayes Nets and
+how to do inference with them.
+
+13
+00:00:39,080 --> 00:00:43,810
+One of my favorite algorithms
+is Monte Carlo Markov Chain.
+
+14
+00:00:43,810 --> 00:00:44,480
+Have fun with the lesson.

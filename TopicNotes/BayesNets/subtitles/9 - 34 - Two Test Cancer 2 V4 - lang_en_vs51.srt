@@ -1,0 +1,13 @@
+1
+00:00:00,380 --> 00:00:02,678
+Calculate for
+me the probability of cancer,
+
+2
+00:00:02,678 --> 00:00:08,590
+given that have received one positive
+and one negative test result.
+
+3
+00:00:08,590 --> 00:00:10,450
+Please write your number into this box.

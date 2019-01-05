@@ -1,0 +1,70 @@
+1
+00:00:00,290 --> 00:00:03,460
+The reason why I gave you all this
+is because I wanted to apply it now
+
+2
+00:00:03,460 --> 00:00:08,530
+to a slightly more complicated problem,
+which is the two test cancer example.
+
+3
+00:00:08,530 --> 00:00:14,310
+In this example, we, again,
+might have our unobservable cancer c,
+
+4
+00:00:14,310 --> 00:00:18,540
+but now we're running two tests,
+test one and test two.
+
+5
+00:00:18,540 --> 00:00:24,074
+As before,
+the prior probability of cancer is 0.01.
+
+6
+00:00:24,074 --> 00:00:29,893
+The probability of receiving a positive
+test result for either test is 0.9.
+
+7
+00:00:29,893 --> 00:00:36,388
+Probability of getting a negative
+result, keeping them cancer free is 0.8.
+
+8
+00:00:36,388 --> 00:00:40,863
+And from those we were able to
+compute all the other properties.
+
+9
+00:00:40,863 --> 00:00:42,788
+I'm just going to write
+them down over here.
+
+10
+00:00:42,788 --> 00:00:45,425
+So take a moment to just write my notes.
+
+11
+00:00:45,425 --> 00:00:49,407
+Now let's assume both of my
+tests come back positive.
+
+12
+00:00:49,407 --> 00:00:55,263
+So T1 = +, and T2 = +.
+
+13
+00:00:55,263 --> 00:01:02,630
+What's the probability of cancer now,
+written in short form P(C|++)?
+
+14
+00:01:02,630 --> 00:01:06,080
+I want you to tell me what that is.
+
+15
+00:01:06,080 --> 00:01:07,620
+And this is a non trivial question.

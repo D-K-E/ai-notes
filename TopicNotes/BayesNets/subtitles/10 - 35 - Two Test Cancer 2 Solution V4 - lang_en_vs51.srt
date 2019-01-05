@@ -1,0 +1,64 @@
+1
+00:00:00,550 --> 00:00:05,630
+We have tried the same trick as before,
+where we use exact same prior
+
+2
+00:00:05,630 --> 00:00:10,658
+of first plus gives
+the following factors, 0.9, 0.2.
+
+3
+00:00:10,658 --> 00:00:14,558
+But our minus gives us
+the probability 0.1 for
+
+4
+00:00:14,558 --> 00:00:18,179
+a negative test result
+treatment of cancer.
+
+5
+00:00:18,179 --> 00:00:25,170
+And a 0.8 for the inverse of a negative
+result of not getting cancer.
+
+6
+00:00:25,170 --> 00:00:28,760
+You multiply those together,
+you get a normalized probability.
+
+7
+00:00:28,760 --> 00:00:33,573
+And if you now normalize by
+the sum of those two things to
+
+8
+00:00:33,573 --> 00:00:36,920
+turn the statement to a probability,
+
+9
+00:00:36,920 --> 00:00:42,578
+you get 0.0009 over the sum of
+those two things over here.
+
+10
+00:00:42,578 --> 00:00:47,498
+And this is 0.0056 for the chance
+
+11
+00:00:47,498 --> 00:00:52,568
+of having cancer, and 0.9943 for
+
+12
+00:00:52,568 --> 00:00:57,650
+the chance of being cancer-free.
+
+13
+00:00:57,650 --> 00:00:59,720
+And this adds up approximately to 1,
+
+14
+00:00:59,720 --> 00:01:01,620
+and therefore it's
+a probability distribution.

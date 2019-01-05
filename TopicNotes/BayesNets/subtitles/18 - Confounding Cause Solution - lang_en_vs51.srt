@@ -1,0 +1,52 @@
+1
+00:00:00,610 --> 00:00:02,885
+The answer is surprisingly simple.
+
+2
+00:00:02,885 --> 00:00:08,240
+It is 0.01, but
+how do you know this so fast?
+
+3
+00:00:08,240 --> 00:00:12,359
+Well, if we look at this
+Bayes Network both the sadness and
+
+4
+00:00:12,359 --> 00:00:17,080
+the question whether they got
+a raise impact my happiness.
+
+5
+00:00:17,080 --> 00:00:22,240
+But since I don't know anything about
+the happiness there's no way that
+
+6
+00:00:22,240 --> 00:00:28,260
+just the weather might impact
+whether I get a raise or not.
+
+7
+00:00:28,260 --> 00:00:32,549
+In fact,
+it might be independently sunny and
+
+8
+00:00:32,549 --> 00:00:35,230
+might independently get a raise at work.
+
+9
+00:00:35,230 --> 00:00:41,350
+There's no mechanism of which
+these two things would co-occur.
+
+10
+00:00:41,350 --> 00:00:45,240
+Therefore the probability of
+a raise given it is sunny,
+
+11
+00:00:45,240 --> 00:00:50,499
+is just the same as the probability of
+a raise given any weather which is 0.01.

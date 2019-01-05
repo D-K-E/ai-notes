@@ -1,0 +1,106 @@
+1
+00:00:00,410 --> 00:00:02,560
+And the answer to this one
+is really interesting.
+
+2
+00:00:02,560 --> 00:00:06,572
+A is clearly not independent of
+E because through C we can see
+
+3
+00:00:06,572 --> 00:00:08,105
+an influence of A to E.
+
+4
+00:00:08,105 --> 00:00:10,690
+Given B that doesn't change.
+
+5
+00:00:10,690 --> 00:00:14,710
+A still influences C
+despite the fact we know B.
+
+6
+00:00:14,710 --> 00:00:17,260
+However if we know C,
+the influence is cut off.
+
+7
+00:00:17,260 --> 00:00:21,500
+There is no way A can
+influence E if we know C.
+
+8
+00:00:21,500 --> 00:00:23,544
+A is clearly independent of B.
+
+9
+00:00:23,544 --> 00:00:27,830
+They're different entry variables,
+they have no incoming Rs.
+
+10
+00:00:27,830 --> 00:00:32,750
+&gt;&gt; But here is the caveat,
+given C, A and B become dependent.
+
+11
+00:00:32,750 --> 00:00:36,031
+&gt;&gt; So whereas initially A and
+B were independent,
+
+12
+00:00:36,031 --> 00:00:38,579
+if you give C they become dependent.
+
+13
+00:00:38,579 --> 00:00:43,040
+And the reason why they become
+dependent we've studied before is
+
+14
+00:00:43,040 --> 00:00:45,340
+the Explain away effect.
+
+15
+00:00:45,340 --> 00:00:48,170
+If we know for example C to be true,
+
+16
+00:00:48,170 --> 00:00:53,550
+then knowledge of A will substantially
+affect what we believe about B.
+
+17
+00:00:53,550 --> 00:00:56,870
+If there is two joint causes for C and
+
+18
+00:00:56,870 --> 00:01:00,550
+we happen to know A is true,
+we will discredit cause B.
+
+19
+00:01:00,550 --> 00:01:05,324
+If we happen to know A is false we'll
+increase our belief for the cause B.
+
+20
+00:01:05,324 --> 00:01:09,366
+There was an effect we studied
+extensively in the happiness example I
+
+21
+00:01:09,366 --> 00:01:10,780
+gave you before.
+
+22
+00:01:10,780 --> 00:01:15,710
+The interesting thing here is you're
+facing a situation where knowledge of
+
+23
+00:01:15,710 --> 00:01:21,780
+a variable C renders previously
+independent variables dependent.

@@ -1,0 +1,155 @@
+1
+00:00:00,600 --> 00:00:02,700
+So this is a difficult question.
+
+2
+00:00:02,700 --> 00:00:05,700
+Let me compute an auxiliary label,
+
+3
+00:00:05,700 --> 00:00:10,580
+which is P of Happiness, that one is
+
+4
+00:00:10,580 --> 00:00:15,600
+expanded by looking at the different
+conditions that can make us happy.
+
+5
+00:00:15,600 --> 00:00:19,315
+P of Happiness given S and
+R, times P of S and
+
+6
+00:00:19,315 --> 00:00:23,443
+R, which is of course
+the product of those two,
+
+7
+00:00:23,443 --> 00:00:27,175
+because independent plus P of Happiness.
+
+8
+00:00:27,175 --> 00:00:32,935
+Given not S R, probability of
+not S R + P of H given S and
+
+9
+00:00:32,935 --> 00:00:37,031
+not R times the probability
+of P of S and
+
+10
+00:00:37,031 --> 00:00:42,289
+not R plus the last case P
+of H given not S and not R.
+
+11
+00:00:42,289 --> 00:00:44,438
+So this just looks at the happiness and
+
+12
+00:00:44,438 --> 00:00:48,630
+all four combinations of the variables
+that could lead to happiness.
+
+13
+00:00:48,630 --> 00:00:51,660
+And you can plug those straight in,
+this one over here is 1.
+
+14
+00:00:51,660 --> 00:00:56,607
+And this one over here
+is the product of S and
+
+15
+00:00:56,607 --> 00:01:00,599
+R which is 0.7 times 0.01.
+
+16
+00:01:00,599 --> 00:01:06,078
+And as you plug all of those in,
+you get as a result,
+
+17
+00:01:06,078 --> 00:01:09,796
+0.5245, that's P(H).
+
+18
+00:01:09,796 --> 00:01:14,582
+Just take some time and do the math by
+going through these different cases
+
+19
+00:01:14,582 --> 00:01:17,495
+using probability and
+you get this result.
+
+20
+00:01:17,495 --> 00:01:24,636
+Now armed with this number,
+the rest now becomes easy which is,
+
+21
+00:01:24,636 --> 00:01:29,132
+we can use base rule
+to turn this around,
+
+22
+00:01:29,132 --> 00:01:33,114
+P(H given R) P(R) over P(H).
+
+23
+00:01:33,114 --> 00:01:37,719
+P(R) we know from over here,
+the probability of a race is 0.01.
+
+24
+00:01:37,719 --> 00:01:41,303
+So the only thing we need to
+compute now is P(H given R).
+
+25
+00:01:41,303 --> 00:01:45,548
+And again we applied sort of probability
+let me just do this over here.
+
+26
+00:01:45,548 --> 00:01:49,912
+We can factor P(H given
+R) as P(H given R,S) for
+
+27
+00:01:49,912 --> 00:01:54,684
+sunny times probability of
+sunny plus P(H given R) and
+
+28
+00:01:54,684 --> 00:01:58,657
+not sunny times
+the probability of not sunny.
+
+29
+00:01:58,657 --> 00:02:03,883
+And if you plug in the numbers for
+this you get 1
+
+30
+00:02:03,883 --> 00:02:11,255
+times 0.7 + 0.9 times 0.3
+that happens to be 0.97.
+
+31
+00:02:11,255 --> 00:02:18,701
+So if you now plug this all back
+into this equation over here,
+
+32
+00:02:18,701 --> 00:02:24,833
+we get 0.97 times 0.01 / 0.5245.
+
+33
+00:02:24,833 --> 00:02:31,994
+This gives us approximately,
+as a correct answer, 0.0185.

@@ -1,0 +1,127 @@
+1
+00:00:00,500 --> 00:00:02,390
+So we want to draw Bayes rule rapidly.
+
+2
+00:00:02,390 --> 00:00:06,830
+We have a situation where we
+have an internal variable A,
+
+3
+00:00:06,830 --> 00:00:10,670
+like whether or not we have cancer.
+
+4
+00:00:10,670 --> 00:00:12,520
+But we can't sense A,
+
+5
+00:00:12,520 --> 00:00:17,180
+instead we have a second variable
+called B, which is our test.
+
+6
+00:00:17,180 --> 00:00:19,330
+And B is observable, but A isn't.
+
+7
+00:00:19,330 --> 00:00:24,090
+This is a classical
+example of a Base network.
+
+8
+00:00:24,090 --> 00:00:28,130
+The base network is composed
+of two variables A and B.
+
+9
+00:00:28,130 --> 00:00:32,210
+We know the prior probability for A and
+
+10
+00:00:32,210 --> 00:00:36,070
+we know the conditional
+A causes B whether or
+
+11
+00:00:36,070 --> 00:00:39,730
+not the cancer causes the test
+result to be positive or not.
+
+12
+00:00:39,730 --> 00:00:41,590
+Although with some randomness involved.
+
+13
+00:00:41,590 --> 00:00:47,750
+So we know about the probability of
+B given the different values for A.
+
+14
+00:00:47,750 --> 00:00:52,160
+And what we care about in this specific
+instance is called diagnostic reasoning.
+
+15
+00:00:52,160 --> 00:00:56,480
+Which is inverse of
+the causal reasoning.
+
+16
+00:00:56,480 --> 00:01:04,290
+Probability of A given B, or similarly,
+probability of A given off B.
+
+17
+00:01:04,290 --> 00:01:09,540
+This is our very first Bayes Network and
+the graphical representation
+
+18
+00:01:09,540 --> 00:01:13,700
+of drawn two variables, A and
+B, connected with an arrow.
+
+19
+00:01:13,700 --> 00:01:20,450
+Because from A to B is a graphical
+representation of distribution of two
+
+20
+00:01:20,450 --> 00:01:26,740
+variables that specified the structure
+of a and this is a probability.
+
+21
+00:01:26,740 --> 00:01:29,380
+And has a conditional
+probability which is normal.
+
+22
+00:01:29,380 --> 00:01:32,220
+Now I do have a quick quiz for you.
+
+23
+00:01:32,220 --> 00:01:36,690
+How many parameters does it
+take to specify the entire
+
+24
+00:01:36,690 --> 00:01:41,440
+joint probability between A and
+B or the entire Bayes Network?
+
+25
+00:01:41,440 --> 00:01:43,440
+I'm not looking for
+a structural parameters.
+
+26
+00:01:44,790 --> 00:01:47,380
+We look to the graph over here,
+just looking for
+
+27
+00:01:47,380 --> 00:01:50,220
+the numerical parameters of
+the underlying probabilities.

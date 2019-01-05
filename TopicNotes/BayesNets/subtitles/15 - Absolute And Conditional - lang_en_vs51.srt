@@ -1,0 +1,41 @@
+1
+00:00:00,236 --> 00:00:04,557
+So now we've learned about independence
+and the corresponding Bayes network has
+
+2
+00:00:04,557 --> 00:00:07,130
+two nodes,
+they're just not connected at all.
+
+3
+00:00:07,130 --> 00:00:09,379
+And we learned about
+conditional independence,
+
+4
+00:00:09,379 --> 00:00:12,008
+in which case we have a Bayes
+network that looks like this.
+
+5
+00:00:12,008 --> 00:00:16,896
+Now I would like to know whether
+absolute independence implies
+
+6
+00:00:16,896 --> 00:00:20,410
+conditional independence, true or false?
+
+7
+00:00:20,410 --> 00:00:24,012
+And I'd also like to know whether
+conditional independence implies
+
+8
+00:00:24,012 --> 00:00:25,386
+absolute independence.
+
+9
+00:00:25,386 --> 00:00:27,190
+Again, true or false?

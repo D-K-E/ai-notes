@@ -1,0 +1,37 @@
+1
+00:00:00,570 --> 00:00:04,360
+The next concept I'd like to
+teach you is called D-Separation.
+
+2
+00:00:04,360 --> 00:00:08,680
+And let me start the discussion
+of this concept by a quiz.
+
+3
+00:00:08,680 --> 00:00:10,410
+We have here a base network and
+
+4
+00:00:10,410 --> 00:00:14,160
+then when we ask to conditional
+independence question.
+
+5
+00:00:14,160 --> 00:00:19,302
+Is C independent of A,
+please tell me yes or no.
+
+6
+00:00:19,302 --> 00:00:24,478
+Is C independent of A given B,
+is C independent of D,
+
+7
+00:00:24,478 --> 00:00:30,736
+is C independent of D given A, and
+is E independent of C given D.
+
+8
+00:00:30,736 --> 00:00:32,589
+[BLANK_AUDIO]

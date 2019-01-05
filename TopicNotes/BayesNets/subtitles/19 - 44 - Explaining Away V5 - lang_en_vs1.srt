@@ -1,0 +1,112 @@
+1
+00:00:00,380 --> 00:00:03,762
+And let me talk about
+a really interesting and
+
+2
+00:00:03,762 --> 00:00:09,374
+special instance of Bayes Net Reasoning
+which is called explaining away.
+
+3
+00:00:09,374 --> 00:00:12,915
+And I'll first give you
+the intuitive answer, and
+
+4
+00:00:12,915 --> 00:00:15,962
+then I wish you to
+compute probabilities for
+
+5
+00:00:15,962 --> 00:00:20,590
+me that manifest the explain away
+effect in Bayes Net of this type.
+
+6
+00:00:20,590 --> 00:00:25,513
+Explaining away means that,
+if we know that we are happy,
+
+7
+00:00:25,513 --> 00:00:31,178
+then sunny weather can explain
+away the cause of happiness.
+
+8
+00:00:31,178 --> 00:00:33,100
+If I then also know that it's sunny,
+
+9
+00:00:33,100 --> 00:00:37,460
+it becomes less likely
+that I received a raise.
+
+10
+00:00:37,460 --> 00:00:40,760
+So let me put this differently, suppose
+I'm a happy guy on a specific day, and
+
+11
+00:00:40,760 --> 00:00:45,020
+my wife asks me, Sebastian,
+why are you so happy?
+
+12
+00:00:45,020 --> 00:00:47,920
+Is it sunny, or did you get a raise?
+
+13
+00:00:47,920 --> 00:00:50,504
+If she then looks outside and
+sees it's sunny,
+
+14
+00:00:50,504 --> 00:00:55,105
+then she might explain to herself, well,
+Sebastian is happy because it's sunny.
+
+15
+00:00:55,105 --> 00:00:59,038
+It makes it effectively,
+less likely that he got a raise,
+
+16
+00:00:59,038 --> 00:01:03,910
+because I could already explain
+this happiness by it being sunny.
+
+17
+00:01:03,910 --> 00:01:09,083
+If she looks outside and it's rainy,
+it makes it more likely I got a raise,
+
+18
+00:01:09,083 --> 00:01:13,117
+because the weather can't
+really explain my happiness.
+
+19
+00:01:13,117 --> 00:01:18,260
+In other words, if you see a certain
+effect that it could be caused
+
+20
+00:01:18,260 --> 00:01:22,935
+by multiple causes,
+seeing one of those causes can explain
+
+21
+00:01:22,935 --> 00:01:27,439
+away any other potential cause
+of this effect over here.
+
+22
+00:01:27,439 --> 00:01:32,254
+So let me put this in numbers, and
+ask you the challenging question of
+
+23
+00:01:32,254 --> 00:01:37,410
+what's the probability of the raise
+given I'm happy, and it's sunny?

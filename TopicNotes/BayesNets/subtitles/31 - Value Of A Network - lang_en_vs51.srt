@@ -1,0 +1,22 @@
+1
+00:00:00,510 --> 00:00:04,570
+So it takes 47 numerical
+probabilities to specify
+
+2
+00:00:05,570 --> 00:00:10,840
+the joint compared to 65,000 if
+we didn't have the structure.
+
+3
+00:00:10,840 --> 00:00:15,440
+I think this example really illustrates
+the advantage of compact Bayes network
+
+4
+00:00:15,440 --> 00:00:16,750
+representations.
+
+5
+00:00:16,750 --> 00:00:18,720
+Over unstructured joint representations.

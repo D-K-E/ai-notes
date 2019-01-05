@@ -1,0 +1,22 @@
+1
+00:00:00,540 --> 00:00:02,090
+And the answer is 13.
+
+2
+00:00:02,090 --> 00:00:06,500
+1 over here, 2 over here,
+and 4 over here.
+
+3
+00:00:06,500 --> 00:00:11,081
+Simplified this speaking,
+any variable that has K
+
+4
+00:00:11,081 --> 00:00:15,245
+inputs requires 2 to
+the K search variables.
+
+5
+00:00:15,245 --> 00:00:18,469
+So in total we have 1, 9, 13.

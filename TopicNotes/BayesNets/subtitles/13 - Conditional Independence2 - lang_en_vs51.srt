@@ -1,0 +1,36 @@
+1
+00:00:00,810 --> 00:00:05,100
+So let me draw the cancer
+example again with two tests.
+
+2
+00:00:05,100 --> 00:00:07,797
+Here's my cancer variable, and
+
+3
+00:00:07,797 --> 00:00:12,530
+there's two condition independent tests,
+T1 and T2.
+
+4
+00:00:12,530 --> 00:00:17,020
+And as before let me assume that
+the probability of cancer is 0.01.
+
+5
+00:00:17,020 --> 00:00:22,360
+What I want you to compute for
+me Is the probability
+
+6
+00:00:22,360 --> 00:00:30,010
+of the second test to be positive if we
+know that the first test was positive.
+
+7
+00:00:30,010 --> 00:00:33,321
+So write this into the following box.
+
+8
+00:00:33,321 --> 00:00:36,019
+[BLANK_AUDIO]

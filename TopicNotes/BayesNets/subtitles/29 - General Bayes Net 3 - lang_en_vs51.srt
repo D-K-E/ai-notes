@@ -1,0 +1,28 @@
+1
+00:00:00,610 --> 00:00:04,590
+And here's our car network which we
+discussed at the very beginning of this
+
+2
+00:00:04,590 --> 00:00:05,230
+unit.
+
+3
+00:00:05,230 --> 00:00:09,776
+How many parameters do we
+need to specify this network?
+
+4
+00:00:09,776 --> 00:00:14,508
+Remember, there are 16
+total variables and
+
+5
+00:00:14,508 --> 00:00:22,891
+the naive join over those 16 will
+be 2 to the 16- 1, which is 65,535.
+
+6
+00:00:22,891 --> 00:00:23,880
+Please write your answer
+into this box over here.

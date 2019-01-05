@@ -1,0 +1,127 @@
+1
+00:00:00,310 --> 00:00:04,680
+For my next example, I will study
+a different type of a Bayes network.
+
+2
+00:00:04,680 --> 00:00:07,838
+Before we've seen networks
+of the following type,
+
+3
+00:00:07,838 --> 00:00:12,370
+where a single, hidden cause
+caused two different measurements.
+
+4
+00:00:12,370 --> 00:00:15,600
+I now want to study a network that
+looks just like the opposite.
+
+5
+00:00:15,600 --> 00:00:19,110
+We have two independent,
+hidden causes, but
+
+6
+00:00:19,110 --> 00:00:24,060
+they get confounded within a single,
+observational variable.
+
+7
+00:00:24,060 --> 00:00:28,120
+I would like to use
+the example of happiness.
+
+8
+00:00:28,120 --> 00:00:32,080
+Suppose I can be happy or unhappy.
+
+9
+00:00:32,080 --> 00:00:36,157
+What makes me happy is
+when the weather is sunny,
+
+10
+00:00:36,157 --> 00:00:41,040
+or if I get a raise at my job,
+which means I make more money.
+
+11
+00:00:41,040 --> 00:00:45,601
+So let's call this sunny, let's call
+this a raise and call this happiness.
+
+12
+00:00:45,601 --> 00:00:52,093
+Perhaps, the probability
+of it being sunny is 0.7.
+
+13
+00:00:52,093 --> 00:00:57,279
+The probability of a raise is 0.01.
+
+14
+00:00:57,279 --> 00:01:03,290
+And I will tell you if the probability
+of being happy is governed as false.
+
+15
+00:01:03,290 --> 00:01:08,812
+The probability of being happy given
+that both of these things occur,
+
+16
+00:01:08,812 --> 00:01:11,722
+I got a raise and it's sunny, is 1.
+
+17
+00:01:11,722 --> 00:01:16,688
+The probability of being happy
+given that it is not sunny and
+
+18
+00:01:16,688 --> 00:01:19,376
+I still got a raise, is 0.9.
+
+19
+00:01:19,376 --> 00:01:23,592
+The probability of being happy
+given that it is sunny, but
+
+20
+00:01:23,592 --> 00:01:26,185
+I didn't give a raise, is 0.7.
+
+21
+00:01:26,185 --> 00:01:28,855
+And the probability of being happy,
+
+22
+00:01:28,855 --> 00:01:33,774
+given that it is neither sunny nor
+did I get their raise, is 0.1.
+
+23
+00:01:33,774 --> 00:01:39,380
+This is a perfectly fine specification
+of a probability distribution
+
+24
+00:01:39,380 --> 00:01:44,613
+where two causes affect the variable
+down here, the happiness.
+
+25
+00:01:44,613 --> 00:01:48,223
+So I'd like you to calculate for
+me the following questions.
+
+26
+00:01:48,223 --> 00:01:54,950
+The probability of a raise given that
+it is sunny, according to this model.
+
+27
+00:01:54,950 --> 00:01:56,900
+Please enter your answer over here.

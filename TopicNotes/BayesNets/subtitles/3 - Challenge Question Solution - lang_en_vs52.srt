@@ -1,0 +1,246 @@
+1
+00:00:00,280 --> 00:00:04,282
+The answer is A, 0.7445.
+
+2
+00:00:04,282 --> 00:00:08,106
+Even though the base net is simple the
+answer will require a bit more work than
+
+3
+00:00:08,106 --> 00:00:10,280
+many of our challenge questions.
+
+4
+00:00:10,280 --> 00:00:13,660
+To be clear we'll be using capital
+letters to indicate our variables.
+
+5
+00:00:13,660 --> 00:00:17,010
+We're using low case letters to
+indicate when that variable is true,
+
+6
+00:00:17,010 --> 00:00:20,510
+or a non in front of it it to
+indicate when its not true.
+
+7
+00:00:20,510 --> 00:00:23,070
+To solve this problem we have to
+determine the ratio of times o2
+
+8
+00:00:23,070 --> 00:00:26,900
+is true given o1 is true,
+to all situations where just o1 is true.
+
+9
+00:00:27,920 --> 00:00:32,590
+In other words, we sum over all possible
+graduation situations, where o2 and
+
+10
+00:00:32,590 --> 00:00:34,440
+o1 are true for the numerator.
+
+11
+00:00:34,440 --> 00:00:37,470
+Which is simply,
+the probability of o1 being true,
+
+12
+00:00:37,470 --> 00:00:40,500
+o2 being true and graduation being true.
+
+13
+00:00:40,500 --> 00:00:45,620
+Plus the probably of o1 being true, o2
+being true and graduation being false.
+
+14
+00:00:45,620 --> 00:00:48,399
+And we're going to
+normalize by this number,
+
+15
+00:00:48,399 --> 00:00:50,972
+plus the situation where o2 is negative.
+
+16
+00:00:50,972 --> 00:00:54,348
+And that is the probably of o1, not o2,
+
+17
+00:00:54,348 --> 00:00:58,800
+and g, plus the probably of o1,
+not 02, and not g.
+
+18
+00:01:00,130 --> 00:01:04,354
+Looking at the first part of the
+numerator, probability of o1, o2, and
+
+19
+00:01:04,354 --> 00:01:07,170
+g, that is simply
+the probability of o1 given g,
+
+20
+00:01:07,170 --> 00:01:10,945
+times the probability of o2 given g,
+times the probability of g.
+
+21
+00:01:10,945 --> 00:01:13,790
+And we can just read this off
+the base network over here.
+
+22
+00:01:14,790 --> 00:01:17,739
+The first number,
+the probability of o1 given g is 0.05.
+
+23
+00:01:18,890 --> 00:01:22,584
+Probability of o2 given g is just 0.75.
+
+24
+00:01:22,584 --> 00:01:26,094
+And the probability of g is just 0.9.
+
+25
+00:01:26,094 --> 00:01:29,868
+We multiply that out and it's 0.3375.
+
+26
+00:01:29,868 --> 00:01:32,540
+Next we'll consider the second
+part of the numerator,
+
+27
+00:01:32,540 --> 00:01:35,520
+the probability of o1, o2, and not g.
+
+28
+00:01:35,520 --> 00:01:38,559
+Well that's simply the probability
+of 01 given not g,
+
+29
+00:01:38,559 --> 00:01:42,119
+the probability of 02 given not g,
+and the probability of not g.
+
+30
+00:01:42,119 --> 00:01:44,772
+And again we'll just read off our chart.
+
+31
+00:01:44,772 --> 00:01:49,733
+It's 0.05 for
+a probability of o1 given not g,
+
+32
+00:01:49,733 --> 00:01:54,941
+0.25, which is a probability
+of 02 given not g.
+
+33
+00:01:54,941 --> 00:01:59,239
+And then the probability of not g,
+which is just the compliment of this,
+
+34
+00:01:59,239 --> 00:02:00,305
+which is 0.1.
+
+35
+00:02:00,305 --> 00:02:03,412
+That comes out to be 0.00125.
+
+36
+00:02:03,412 --> 00:02:06,550
+Now we'll consider the last
+two parts of the equation.
+
+37
+00:02:06,550 --> 00:02:08,990
+We already have these
+two from our numerator.
+
+38
+00:02:08,990 --> 00:02:12,469
+So now we need to look at
+probability of o1, not o2, and g,
+
+39
+00:02:12,469 --> 00:02:17,181
+which is just equal to probability of o1
+given g, probability of not o2 given g,
+
+40
+00:02:17,181 --> 00:02:18,510
+and probability of g.
+
+41
+00:02:18,510 --> 00:02:21,550
+Again, we can just read these
+numbers off our base net.
+
+42
+00:02:21,550 --> 00:02:24,010
+It comes up to be 0.1125.
+
+43
+00:02:24,010 --> 00:02:28,150
+The final one probability,
+of o1, not o2 and not g.
+
+44
+00:02:28,150 --> 00:02:33,706
+Again we just use the same equations and
+we get 0.00375.
+
+45
+00:02:33,706 --> 00:02:36,632
+Now we can take all these
+numbers we have just calculated,
+
+46
+00:02:36,632 --> 00:02:41,000
+put it into our equation, and
+do the substitution and get our answer.
+
+47
+00:02:41,000 --> 00:02:44,064
+Doing the simple math
+we end up with 0.7445,
+
+48
+00:02:44,064 --> 00:02:46,068
+which is what we were hoping for.
+
+49
+00:02:46,068 --> 00:02:50,231
+We calculated this answer by summing up
+the results for all relevant situations.
+
+50
+00:02:50,231 --> 00:02:52,247
+But we can also do
+inference by sampling,
+
+51
+00:02:52,247 --> 00:02:54,720
+which can handle much bigger networks.
+
+52
+00:02:54,720 --> 00:02:55,580
+Please be on the lookout for
+
+53
+00:02:55,580 --> 00:02:58,120
+all the different ways we can
+do inference invasion networks.

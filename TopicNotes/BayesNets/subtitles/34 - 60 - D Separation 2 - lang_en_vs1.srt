@@ -1,0 +1,59 @@
+1
+00:00:01,650 --> 00:00:04,205
+In this specific example,
+
+2
+00:00:04,205 --> 00:00:06,900
+the rule applies very, very simple.
+
+3
+00:00:06,900 --> 00:00:08,980
+Any two variables are independent,
+
+4
+00:00:08,980 --> 00:00:12,050
+if they're not linked by just unknown variables.
+
+5
+00:00:12,050 --> 00:00:14,540
+So for example, ven OB,
+
+6
+00:00:14,540 --> 00:00:16,820
+and everything downstream of B,
+
+7
+00:00:16,820 --> 00:00:22,860
+becomes independent of anything upstream of B. E is not independent of C,
+
+8
+00:00:22,860 --> 00:00:28,761
+conditional B, however, knowledge of B does not render A and E independent.
+
+9
+00:00:28,761 --> 00:00:30,405
+In this graph over here,
+
+10
+00:00:30,405 --> 00:00:32,330
+A and B connect to C,
+
+11
+00:00:32,330 --> 00:00:37,100
+and C connects to D and to E. So let me ask you,
+
+12
+00:00:37,100 --> 00:00:41,395
+is A independent of E?
+
+13
+00:00:41,395 --> 00:00:43,435
+A independent of E given B? A independent of E given C?
+
+14
+00:00:43,435 --> 00:00:44,810
+A independent of B?
+
+15
+00:00:44,810 --> 00:00:48,000
+And A independent of B given C?

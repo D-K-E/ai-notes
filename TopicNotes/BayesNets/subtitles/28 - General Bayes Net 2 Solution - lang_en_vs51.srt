@@ -1,0 +1,19 @@
+1
+00:00:00,012 --> 00:00:06,640
+And the answer is 19, so one here,
+one here, one here, two here, two here.
+
+2
+00:00:06,640 --> 00:00:10,537
+Two arrows pointing to G which makes for
+four and
+
+3
+00:00:10,537 --> 00:00:15,033
+three arrows pointing to D,
+two to the three is eight.
+
+4
+00:00:15,033 --> 00:00:16,799
+So you get 1, 2, 3, 8, 2, 2,
+4, if you add those up it's 19

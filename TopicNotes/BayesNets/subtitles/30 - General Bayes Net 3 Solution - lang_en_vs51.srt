@@ -1,0 +1,22 @@
+1
+00:00:00,225 --> 00:00:03,125
+To answer this question,
+let us add up these numbers.
+
+2
+00:00:03,125 --> 00:00:08,109
+[INAUDIBLE] is 1, 1, 1,
+this is one incoming arc, so
+
+3
+00:00:08,109 --> 00:00:11,600
+it's 2, two incoming arc makes 4,
+
+4
+00:00:11,600 --> 00:00:16,129
+one incoming arc is 2, 2 equals 4.
+
+5
+00:00:16,129 --> 00:00:23,954
+Four incoming arcs make 16,
+we add all the rad numbers we get 47.

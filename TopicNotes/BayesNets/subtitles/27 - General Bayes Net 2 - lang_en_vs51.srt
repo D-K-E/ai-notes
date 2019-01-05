@@ -1,0 +1,25 @@
+1
+00:00:00,430 --> 00:00:01,740
+Here's another quiz.
+
+2
+00:00:01,740 --> 00:00:06,810
+How many parameters do we need to
+specify the joint distribution for
+
+3
+00:00:06,810 --> 00:00:11,510
+this phase map over here where A B and
+C point into D.
+
+4
+00:00:11,510 --> 00:00:12,850
+D points into E.
+
+5
+00:00:12,850 --> 00:00:15,320
+F and G and C also point into G?
+
+6
+00:00:15,320 --> 00:00:17,290
+Please write your answer into this box.

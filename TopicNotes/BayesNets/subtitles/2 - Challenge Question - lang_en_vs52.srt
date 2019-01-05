@@ -1,0 +1,43 @@
+1
+00:00:00,320 --> 00:00:03,020
+Here is a challenge question to give
+a taste of how how we are going to
+
+2
+00:00:03,020 --> 00:00:07,460
+construct and use Bayesian networks to
+make inferences about new situations.
+
+3
+00:00:07,460 --> 00:00:10,720
+The small net given here models part
+of the situation where a student
+
+4
+00:00:10,720 --> 00:00:14,220
+was about to graduate and
+applied for jobs at two companies.
+
+5
+00:00:14,220 --> 00:00:16,690
+G represents the student,
+indeed, graduated.
+
+6
+00:00:16,690 --> 00:00:20,550
+O1 and O2 represent that the student
+received a job offer from the company 1
+
+7
+00:00:20,550 --> 00:00:22,430
+and the company 2, respectively.
+
+8
+00:00:22,430 --> 00:00:25,385
+Calculate the probability that the
+student received an offer from company
+
+9
+00:00:25,385 --> 00:00:28,505
+2, given that we know that she
+received and offer from company 1.

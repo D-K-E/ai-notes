@@ -1,0 +1,49 @@
+1
+00:00:00,000 --> 00:00:03,241
+And the correct answer is no.
+
+2
+00:00:03,241 --> 00:00:07,899
+Intuitively, getting a positive
+test result of what cancer
+
+3
+00:00:07,899 --> 00:00:12,479
+gives us information about
+whether you have cancer or not.
+
+4
+00:00:12,479 --> 00:00:14,780
+So if you get a positive test result,
+
+5
+00:00:14,780 --> 00:00:18,277
+you're going to raise
+the probability of having cancer.
+
+6
+00:00:18,277 --> 00:00:19,811
+So relative to the prior probability.
+
+7
+00:00:19,811 --> 00:00:22,694
+With that increased probability,
+
+8
+00:00:22,694 --> 00:00:28,170
+we will predict that another test will,
+with a higher likelihood,
+
+9
+00:00:28,170 --> 00:00:33,951
+give us a positive response than if
+we hadn't taken the previous test.
+
+10
+00:00:33,951 --> 00:00:35,401
+It's really important to understand.
+
+11
+00:00:35,401 --> 00:00:41,410
+So that we understand it, let me make
+you calculate those probabilities.

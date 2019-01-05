@@ -1,0 +1,80 @@
+1
+00:00:00,500 --> 00:00:02,630
+And if you got this right,
+
+2
+00:00:02,630 --> 00:00:06,470
+I will be deeply impressed of
+the fact you got this right.
+
+3
+00:00:06,470 --> 00:00:10,810
+My happiness is well explained
+by the fact that sunny.
+
+4
+00:00:10,810 --> 00:00:13,770
+So if someone observes you to
+be happy and asks the question,
+
+5
+00:00:13,770 --> 00:00:16,740
+is this because Sebastian
+got a raise at work?
+
+6
+00:00:16,740 --> 00:00:21,300
+Well If you know it's sunny and
+this is a fairly good explanation for
+
+7
+00:00:21,300 --> 00:00:23,230
+me being happy.
+
+8
+00:00:23,230 --> 00:00:25,830
+You don't have to assume I got a raise.
+
+9
+00:00:25,830 --> 00:00:28,508
+If you don't know about the weather,
+
+10
+00:00:28,508 --> 00:00:33,791
+then obviously the chances are higher
+that the raise caused my happiness.
+
+11
+00:00:33,791 --> 00:00:39,274
+And therefore this number
+goes up from 0.014 to 0.018.
+
+12
+00:00:39,274 --> 00:00:44,276
+Let me ask you one final
+question in this next quiz which
+
+13
+00:00:44,276 --> 00:00:50,822
+is the probability of a race given
+that I look happy and it's not sunny.
+
+14
+00:00:50,822 --> 00:00:55,398
+This is the most extreme case for
+making a raise likely because
+
+15
+00:00:55,398 --> 00:01:00,640
+I am a happy guy and it's definitely
+not caused by the weather.
+
+16
+00:01:00,640 --> 00:01:04,300
+So it could be just random or
+it could be caused by the raise.
+
+17
+00:01:04,300 --> 00:01:08,260
+So please calculate this number for
+me and enter it into this box.

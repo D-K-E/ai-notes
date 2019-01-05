@@ -1,0 +1,84 @@
+1
+00:00:00,370 --> 00:00:03,262
+It's really interesting to compare
+this to the situation over here.
+
+2
+00:00:03,262 --> 00:00:07,387
+In both cases, I'm happy,
+as shown over here.
+
+3
+00:00:07,387 --> 00:00:12,052
+And I asked the same question,
+which is whether I got a raise at work,
+
+4
+00:00:12,052 --> 00:00:13,270
+this R over here.
+
+5
+00:00:13,270 --> 00:00:16,638
+But in one case,
+I observe that the weather is sunny and
+
+6
+00:00:16,638 --> 00:00:18,230
+in the other one isn't.
+
+7
+00:00:18,230 --> 00:00:21,557
+And look what it does to my probability
+of having received a raise.
+
+8
+00:00:21,557 --> 00:00:26,055
+The sunniness perfectly
+well explains my happiness.
+
+9
+00:00:26,055 --> 00:00:31,127
+And my probability of
+having received a raise
+
+10
+00:00:31,127 --> 00:00:36,340
+ends up to be a mere 1.4%, or 0.014.
+
+11
+00:00:36,340 --> 00:00:40,874
+However, if my wife observes it to
+be not sunny, then it is much more
+
+12
+00:00:40,874 --> 00:00:45,344
+likely that the cause of my happiness
+is related to a raise at work.
+
+13
+00:00:45,344 --> 00:00:47,988
+And now the probability is 8.3%,
+
+14
+00:00:47,988 --> 00:00:52,043
+which is significantly
+higher than the 1.4% before.
+
+15
+00:00:52,043 --> 00:00:56,268
+Now, this is a Bayes'
+network of which S and
+
+16
+00:00:56,268 --> 00:01:01,993
+R are independent, but
+H adds a dependence between S and R.
+
+17
+00:01:01,993 --> 00:01:06,520
+Let me talk about this in a little
+bit more detail on the next paper.
+
+18
+00:01:06,520 --> 00:01:06,980
+So here's a

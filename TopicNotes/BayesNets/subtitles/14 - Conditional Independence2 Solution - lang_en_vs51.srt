@@ -1,0 +1,173 @@
+1
+00:00:00,540 --> 00:00:04,210
+So, for this one,
+we are going to apply total probability.
+
+2
+00:00:04,210 --> 00:00:10,170
+This thing over here is the same as
+probability of test 2 to be positive,
+
+3
+00:00:10,170 --> 00:00:13,640
+which I am going to abbreviate
+with a + 2 over here.
+
+4
+00:00:13,640 --> 00:00:16,859
+Condition on test 1 being positive and
+
+5
+00:00:16,859 --> 00:00:22,321
+me having cancer has probability
+of me having cancer given
+
+6
+00:00:22,321 --> 00:00:26,615
+positive plus probability
+of test 2 being positive
+
+7
+00:00:26,615 --> 00:00:31,296
+condition on positive and
+me not having cancer,
+
+8
+00:00:31,296 --> 00:00:38,090
+times probability of me not having
+cancer, given the test 1 is positive.
+
+9
+00:00:38,090 --> 00:00:41,420
+That's the same as
+the total probability.
+
+10
+00:00:41,420 --> 00:00:44,620
+But now everything is
+conditioned on + 1.
+
+11
+00:00:44,620 --> 00:00:46,530
+Take a moment to verify this.
+
+12
+00:00:48,370 --> 00:00:50,200
+Now here you can plug in the numbers.
+
+13
+00:00:50,200 --> 00:00:57,664
+We already calculated this one before,
+which is approximately 0.043.
+
+14
+00:00:57,664 --> 00:01:02,076
+And this one over here is 1 minus this,
+
+15
+00:01:02,076 --> 00:01:06,365
+which is 0.957 approximately.
+
+16
+00:01:06,365 --> 00:01:12,077
+In this now exploits conditional
+independence which is given that
+
+17
+00:01:12,077 --> 00:01:17,670
+knowledge of a first test gives me no
+more information about the second test.
+
+18
+00:01:17,670 --> 00:01:21,750
+It only gives me information if C was
+unknown as was the case over here.
+
+19
+00:01:21,750 --> 00:01:26,070
+So we can rewrite this thing over
+here as follows P of plus 2,
+
+20
+00:01:26,070 --> 00:01:31,820
+given the cancer, I can drop the plus
+1 and the same is true over here.
+
+21
+00:01:31,820 --> 00:01:34,191
+This is exploiting my
+conditional independence.
+
+22
+00:01:34,191 --> 00:01:37,702
+I knew that P of plus 1 or
+
+23
+00:01:37,702 --> 00:01:45,020
+plus 2 condition on C is
+the same as P of plus 2.
+
+24
+00:01:45,020 --> 00:01:47,400
+Condition of C and test 1.
+
+25
+00:01:47,400 --> 00:01:51,765
+I can now read those off my table here,
+
+26
+00:01:51,765 --> 00:01:57,361
+there's 0.9 times 0.043 plus 0.2,
+
+27
+00:01:57,361 --> 00:02:03,775
+which is 1 minus 0.8 over here,
+times 0.957,
+
+28
+00:02:03,775 --> 00:02:09,112
+which gives me approximately 0.2301.
+
+29
+00:02:09,112 --> 00:02:14,610
+So that says if my first
+test comes in positive,
+
+30
+00:02:14,610 --> 00:02:20,720
+I expect my second test to be
+positive with the probably 0.2301.
+
+31
+00:02:20,720 --> 00:02:25,446
+That's an increase probability to the
+default probability which we calculated
+
+32
+00:02:25,446 --> 00:02:28,960
+before, which is
+probability of any test.
+
+33
+00:02:28,960 --> 00:02:32,970
+Test 2 coming as positive
+before was to normalize or
+
+34
+00:02:32,970 --> 00:02:37,680
+Bayes rule which was 0.207.
+
+35
+00:02:37,680 --> 00:02:42,482
+So my first test has a 20%
+chance of coming in positive,
+
+36
+00:02:42,482 --> 00:02:47,676
+my second test after seeing
+a positive test has now an increased
+
+37
+00:02:47,676 --> 00:02:51,993
+probability of about 23%
+of coming in positive.

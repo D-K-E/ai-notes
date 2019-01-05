@@ -1,0 +1,61 @@
+1
+00:00:00,320 --> 00:00:02,887
+And the answer is,
+both of them are false.
+
+2
+00:00:02,887 --> 00:00:07,090
+We already saw that conditional
+independence, as shown over here,
+
+3
+00:00:07,090 --> 00:00:09,703
+doesn't give us absolute independence.
+
+4
+00:00:09,703 --> 00:00:12,749
+So, for example, this is test
+number one and test number two,
+
+5
+00:00:12,749 --> 00:00:14,482
+you might or might not have cancer.
+
+6
+00:00:14,482 --> 00:00:18,226
+Our first test gives us information
+about whether you have cancer or not.
+
+7
+00:00:18,226 --> 00:00:21,809
+And as a result,
+you've changed our prior probability for
+
+8
+00:00:21,809 --> 00:00:24,410
+the second test to come in positive.
+
+9
+00:00:24,410 --> 00:00:30,240
+That means conditional independence
+does not imply absolute independence,
+
+10
+00:00:30,240 --> 00:00:32,759
+which renders this assumption,
+here, false.
+
+11
+00:00:32,759 --> 00:00:37,330
+And as it also turns out that if
+you have absolute independence,
+
+12
+00:00:37,330 --> 00:00:40,040
+things might not be
+conditionally independent for
+
+13
+00:00:40,040 --> 00:00:45,060
+reasons that can't quite explain so
+far but that we will learn about next.

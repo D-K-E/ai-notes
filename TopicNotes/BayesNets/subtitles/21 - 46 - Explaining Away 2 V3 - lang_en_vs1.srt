@@ -1,0 +1,37 @@
+1
+00:00:00,630 --> 00:00:05,419
+Now, to understand the explain away
+effect, you have to compare this to
+
+2
+00:00:05,419 --> 00:00:09,266
+the probability of a raise
+given that we're just happy and
+
+3
+00:00:09,266 --> 00:00:12,188
+we don't know anything
+about the weather.
+
+4
+00:00:12,188 --> 00:00:14,077
+So let's do that exercise next.
+
+5
+00:00:14,077 --> 00:00:18,915
+So my next quiz is what's
+the probability of a raise given that
+
+6
+00:00:18,915 --> 00:00:23,953
+all I know is that I'm happy and
+I don't know about the weather?
+
+7
+00:00:23,953 --> 00:00:28,282
+Now this happens to be, once again,
+a pretty complicated question.
+
+8
+00:00:28,282 --> 00:00:28,980
+So take your time.

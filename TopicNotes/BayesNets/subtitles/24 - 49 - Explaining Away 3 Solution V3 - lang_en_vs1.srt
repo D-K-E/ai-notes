@@ -1,0 +1,82 @@
+1
+00:00:00,610 --> 00:00:05,080
+Now the answer follows the exact
+same scheme as before,
+
+2
+00:00:05,080 --> 00:00:07,800
+with S being replaced by not S.
+
+3
+00:00:07,800 --> 00:00:12,910
+So this should be an easier question for
+you to answer, P of R given H,
+
+4
+00:00:12,910 --> 00:00:17,830
+and not S, can be inverted by
+base rule to be as follows.
+
+5
+00:00:17,830 --> 00:00:20,290
+Once we apply base rule,
+as indicated over here,
+
+6
+00:00:20,290 --> 00:00:23,700
+where we sort H to the left side and
+R to the right side,
+
+7
+00:00:23,700 --> 00:00:29,670
+you can observe that this value over
+here can be readily found in the table.
+
+8
+00:00:29,670 --> 00:00:32,320
+It's actually the 0.9 over there.
+
+9
+00:00:32,320 --> 00:00:36,631
+This value over here,
+the Bayes is independent of the data
+
+10
+00:00:37,825 --> 00:00:40,380
+Bayes network, so it's just 0.01.
+
+11
+00:00:40,380 --> 00:00:46,870
+And as before, we apply total
+probability, the expression over here.
+
+12
+00:00:46,870 --> 00:00:49,729
+And we obtain of this
+quotient over here,
+
+13
+00:00:49,729 --> 00:00:52,598
+that these two expressions are the same.
+
+14
+00:00:52,598 --> 00:00:54,680
+P of H given not S not R.
+
+15
+00:00:54,680 --> 00:00:57,013
+R is the value over here.
+
+16
+00:00:57,013 --> 00:01:00,485
+And the 0.99 is the compliment
+of probability of R,
+
+17
+00:01:00,485 --> 00:01:06,143
+taken from over here and
+that ends up to be 0.0833.
+
+18
+00:01:06,143 --> 00:01:08,785
+This will be the right answer.

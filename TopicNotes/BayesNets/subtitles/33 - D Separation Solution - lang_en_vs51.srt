@@ -1,0 +1,60 @@
+1
+00:00:00,440 --> 00:00:03,719
+So C is not independent of A.
+
+2
+00:00:03,719 --> 00:00:09,063
+In fact, A influences C by virtue of B.
+
+3
+00:00:09,063 --> 00:00:13,388
+But if you know B,
+then A becomes independent of C,
+
+4
+00:00:13,388 --> 00:00:17,022
+which means the only
+determinant to C is B.
+
+5
+00:00:17,022 --> 00:00:17,919
+If you know B for
+
+6
+00:00:17,919 --> 00:00:21,857
+sure, then knowledge of A won't
+really tell you anything about C.
+
+7
+00:00:21,857 --> 00:00:27,606
+C is also not independent of D, just
+the same way C is not independent of A.
+
+8
+00:00:27,606 --> 00:00:31,410
+If I learn something about D,
+I can infer more about C.
+
+9
+00:00:31,410 --> 00:00:36,980
+But if I do know A, then it's hard to
+imagine how knowledge of D would help
+
+10
+00:00:36,980 --> 00:00:42,030
+me with C because I can't learn anything
+more about A than knowing A already.
+
+11
+00:00:42,030 --> 00:00:44,950
+Therefore, given A,
+C and D are independent.
+
+12
+00:00:44,950 --> 00:00:48,470
+The same is true for E and C.
+
+13
+00:00:48,470 --> 00:00:51,670
+If you know D then E and
+C become independent.
