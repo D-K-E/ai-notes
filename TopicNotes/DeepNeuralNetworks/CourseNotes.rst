@@ -145,15 +145,21 @@ Explanation:
 
 - alpha is the learning rate, it is used as a step term.
 - Basically we put a random line on to n-1 dimensional hyperplane
-- Then we ask ourselves how well we are doing. Since this is all done with labeled data
-  We can determine the misclassified points
-- For every misclassified point vector, we change the weights and bias term accordingly, so that
-  the seperator line comes either closer or farther towards the point vector.
-- If the prediction is 0, that means normally the prediction should have been 1 but it is classified as 0,
-  then for the given point the line equation should have given a positive result, but with the current weights and bias
+- Then we ask ourselves how well we are doing. Since this is all done with
+  labeled data. We can determine the misclassified points
+
+- For every misclassified point vector, we change the weights and bias term
+  accordingly, so that the seperator line comes either closer or farther
+  towards the point vector.
+
+- If the prediction is 0, that means normally the prediction should have been
+  1 but it is classified as 0, then for the given point the line equation
+  should have given a positive result, but with the current weights and bias
   it did not, so we increase the weights and the bias
-- If the prediction is 1, that means normally the prediction should have been 0 but it is classified as 1,
-  then for the given point the line equation should have given a negative result, but with the current weights and bias
+
+- If the prediction is 1, that means normally the prediction should have been
+  0 but it is classified as 1, then for the given point the line equation
+  should have given a negative result, but with the current weights and bias
   it gave a positive result, so we decrease the weights and the bias.
 
 .. code:: python3
@@ -227,13 +233,16 @@ Softmax
 
 Let's say we have a classification problem, we want to know how good we did it ?
 The idea is again to use error functions to determine it.
-The way to do that is to calculate the distance between the data points and the computed line.
-This distance would give how deep the data point is in the classified space. If it is in the good area
-then the distance to the line would indicate a larger probability that the point is well classified.
-If it is around the frontier defined by the line, and still is in the good area, then the distance would
-indicate that the *correctness* of the data point is not that deep.
-If the point is misclassified, then it would have a higher error rate, in the end we add all the errors together
-to find their sum, and it is this value that we are trying to minimise.
+The way to do that is to calculate the distance between the data points and
+the computed line. 
+This distance would give how deep the data point is in the
+classified space. If it is in the good area then the distance to the line
+would indicate a larger probability that the point is well classified. If it
+is around the frontier defined by the line, and still is in the good area,
+then the distance would indicate that the *correctness* of the data point is
+not that deep. If the point is misclassified, then it would have a higher
+error rate, in the end we add all the errors together to find their sum, and
+it is this value that we are trying to minimise.
 
 Softmax function is just a generalisation of this phenomenon to N classes.
 
@@ -302,27 +311,34 @@ This can be obtained by minimising the cross enthropy.
 Cross Enthropy
 ~~~~~~~~~~~~~~
 
-I have a bunch of events and a bunch of probabilities, how likely is it that those
-events happen based on the probabilities, if it is very likely than we have small cross enthropy
-if it is less likely than we have a big cross enhtropy
+I have a bunch of events and a bunch of probabilities, how likely is it that 
+those events happen based on the probabilities, if it is very likely than we 
+have small cross enthropy if it is less likely than we have a big cross
+enhtropy
 
 It is obtained by summing up the negative logarithm of the probabilities.
 Why logarithm ?
-Because assuming that the events are independent, that is events that are subject to probabilities are
+Because assuming that the events are independent, that is events that are
+subject to probabilities are
 independent, their total probability is their product. So:
 
 - P(all) = P(1) × P(2) × ... × P(n)
 
-This is very expensive to compute and it is very sensible to changes in the probabilities
+This is very expensive to compute and it is very sensible to changes in the
+probabilities
 Logarithm transforms this equation to summation formula:
 
-- log(P(all) = log(P(1) × P(2) × ... × P(n)) = log(P(1)) + log(P(2)) + ... + log(P(N))
-- Now since we are dealing with numbers between 0 and 1, the result of the log is negative.
-  To compensate that and have positive numbers we take the negatives of the logarithm
+- log(P(all) = log(P(1) × P(2) × ... × P(n)) = log(P(1)) + log(P(2)) + ... +
+  log(P(N))
+- Now since we are dealing with numbers between 0 and 1, the result of the log
+  is negative.
+  To compensate that and have positive numbers we take the negatives of the
+  logarithm
 
-- The moment we take the negatives of the logarithms, we have a positive result, the greater the
-  result, greater the cross enthropy. Since, closer the number is to 1, smaller its logarithm will be,
-  seeing that log(1) is equal to 0.
+- The moment we take the negatives of the logarithms, we have a positive
+  result, the greater the result, greater the cross enthropy. Since, closer
+  the number is to 1, smaller its logarithm will be, seeing that log(1) is
+  equal to 0.
 
 .. code:: python3
 
