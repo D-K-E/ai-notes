@@ -93,6 +93,37 @@ Properties:
     then A and B have the opposite direction with respect to origin
     else B is origin
 
+Scalar/Dot Product:
+
+Rule:
+
+- let
+  :math:`A = (a_1, a_2, ..., a_n)`
+  :math:`B = (b_1, b_2, ..., b_n)`
+  :math:`A \dot B = (a_1{\times}b_1 + a_2{\times}b_2 + ... + a_n{\times}b_n)`
+  :math:`s` is a number
+  :math:`A \dot B = s`
+
+Properties:
+
+1. :math:`A \dot B = B \dot A`
+
+2. :math:`A \dot (B + C) = A \dot B + A \dot C = (B + C) \dot A`
+
+3. let :math:`x` be a number
+   - :math:`(x \times A) \dot B = x \times (A \dot B)`
+   - :math:`A \dot (x \times B) = x \times (A \dot B)`
+
+4. if :math:`A = (0, 0, ..., 0)`
+   then :math:`A \dot A = 0`
+   else :math:`A \dot A > 0`
+
+5. if 
+     :math:`A \not = (0, 0, ..., 0)` and 
+     :math:`B \not = (0, 0, ..., 0)` and
+     :math:`A \dot B = 0`
+   then A is perpendicular/orthogonal to B
+
 
 Located Vectors
 ---------------
@@ -140,3 +171,133 @@ Example:
 - :math:`(5, -2, -5, 1, 4) = (5, -2, -5, 1, 4)`
 - :math:`\therefore`
 - :math:`\vec{JL} = \vec{DT}`
+
+- let
+  :math:`\vec{AB}`
+  :math:`\vec{DE}`
+  :math:`s \not = 0`
+
+- if :math:`B - A = s \times (E - D)`
+  then :math:`\vec{AB}` and :math:`\vec{DE}` are *parallel*
+
+- if :math:`s > 0` in :math:`B - A = s \times (E - D)`
+  then :math:`\vec{AB}` and :math:`\vec{DE}` have the *same direction*
+
+- if :math:`s < 0` in :math:`B - A = s \times (E - D)`
+  then :math:`\vec{AB}` and :math:`\vec{DE}` have the *opposite direction*
+
+Example:
+
+- let 
+  :math:`A = (3, 2)`
+  :math:`B = (4, 8)`
+  :math:`C = (6, 4)`
+  :math:`D = (9, 22)`
+  :math:`\vec{AB}`
+  :math:`\vec{CD}`
+
+- then
+  :math:`B - A = (1, 6)`
+  :math:`D - C = (3, 18)`
+  :math:`D - C = 3 ( B - A )`
+  :math:`\therefore`
+  :math:`\vec{AB}` and :math:`\vec{CD}` are *parallel*
+    and have the *same direction*
+
+Operations on Located Vectors
+******************************
+
+Addition:
+
+See section Addition for Points
+
+Subtraction:
+
+See section Subtraction for Points
+
+Scalar/Dot Product
+
+See section Scalar/Dot Product for Points
+
+Rule:
+
+- let 
+  :math:`P = (p_1, p_2, ..., p_n)`
+  :math:`Q = (q_1, q_2, ..., q_n)`
+  :math:`C = (c_1, c_2, ..., c_n)`
+  :math:`D = (d_1, d_2, ..., d_n)`
+  :math:`O = (0, 0, ..., 0)`
+  :math:`\vec{PQ} = (P, Q)`
+  :math:`\vec{CD} = (C, D)`
+  :math:`\vec{PQ} = \vec{(Q-P)O}`
+  :math:`\vec{CD} = \vec{(D-C)O}`
+  :math:`A = \vec{(Q-P)O} = ((Q-P), O)`
+  :math:`B = \vec{(D-C)O} = ((D-C), O)`
+  :math:`A = ((q_1 - p_1, q_2 - p_2, ..., q_n - p_n), (0, 0, ..., 0))`
+  :math:`B = ((d_1 - c_1, d_2 - c_2, ..., d_n - c_n), (0, 0, ..., 0))`
+  :math:`A = ((a_1, a_2, ..., a_n), (0, 0, ..., 0))`
+  :math:`B = ((b_1, b_2, ..., b_n), (0, 0, ..., 0))`
+  :math:`A \dot B = ((Q - P) \dot (D - C), 0 \dot 0)`
+  :math:`A \dot B = (a_1{\times}b_1 + a_2{\times}b_2 + ... + a_n{\times}b_n, 0)`
+  :math:`s` is a number
+  :math:`A \dot B = (s, 0) = \vec{PQ} \dot \vec{CD}`
+
+
+Eigenvalues & Eigenvectors
+===========================
+
+Linear Transformations
+=======================
+
+Vectors: `Matrix with a one column/row. That which has a direction and a
+magnitude.`
+
+A matrix can transform the magnitude and the direction of a vector.
+
+:math:`A = [[a,b],[c,d]]`
+
+:math:`B = [[3,-2],[1,0]]`
+
+The matrix B transforms the vector :math:`[1,0]^T` to :math:`[3,1]^T`
+Why ? Let's multiply the vector with the matrix B
+
+:math:`[[3x1 + -2x0],[ 1x1 + 0x0]]`
+:math:`[[3+0],[1+0]]`
+:math:`[3,1]^T`
+
+So our first vector was changed both in terms of magnitude (it is longer now),
+and in direction (it points to a different direction now)
+
+
+Eigenvectors & Eigenvalues
+===========================
+
+Eigenvectors are special vectors that have the following property.
+When we multiply an eigenvector with a linear transformation matrix, the
+result is a scalar multiplication of the eigenvector itself.
+
+Eigenvalue is simply the scalar multiple of the eigenvector when a linear
+transformation is applied
+
+For example:
+:math:`A = [[3,1], [-2,0]]`
+:math:`v = [2,1]^T`
+
+The linear transformation, multiplication of v with matrix A, is equal to
+:math:`[4,2]^T`.
+
+Now the vector :math:`[4,2]` is simply v times 2.
+2 is eigenvalue. So basically the transformation did not change the direction
+of the vector but it changed the magnitude of the vector
+
+When dealing with calculating eigenvectors and eigenvalues we start from
+finding out an eigenvalue first.
+
+Formally, eigenvectors are defined as follows:
+:math:`A \dot v = \lambda \dot v`
+
+- A is the transformation matrix
+- v is the eigenvector
+- lambda is the eigenvalue
+
+
