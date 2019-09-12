@@ -33,7 +33,7 @@ What is the difference between the current instant and the instant before
 
 Formal definition:
 
-f'(x)=lim(h->0) [f(x+h)-f(x)]/h
+- :math:`f^{(1)}(p) = \lim_{h \to 0} \frac{f(p+h) - f(p)}{h}`
 
 Simple rules:
 

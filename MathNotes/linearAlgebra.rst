@@ -243,6 +243,48 @@ Rule:
   :math:`A \dot B = (s, 0) = \vec{PQ} \dot \vec{CD}`
 
 
+Norm of a Vector
+----------------
+
+Norm is the magnitude of a vector. It is denoted by :math:`||A||` for a vector
+A. The operation is defined as :math:`||A|| = \sqrt{a^2 + b^2}` if :math:`A =
+(a, b)`. If :math:`A = (a,b,c)` then :math:`\sqrt{a^2, b^2, c^2}`.
+For a vector that is n dimensional, that is, :math:`A = (a_1, a_2, ..., a_n)`
+
+For any vector :math:`||A|| = ||-A||`, since their direction does not relate
+to their magnitude.
+
+The distance between points A, B is defined as :math:`||A-B|| =
+\sqrt{(A-B){\dot}(A-B)}`. Naturally :math:`||A-B||=||B-A||`
+
+We can also define circles and disks this way for 2d.
+
+Let *a* be number that is :math:`a > 0`, and let *P* be a point in a plane
+xy. The collection of points *S* is called
+
+- **open disc** of radius *a* centered at *P* if :math:`||S-P|| < a`
+- **closed disc** of radius *a* centered at *P* if :math:`||S-P|| ≤ a`
+- **circle** of radius *a* centered at *P* if :math:`||S-P|| = a`
+
+We can define balls and spheres using the same definitions for 3d:
+Let *a* be number that is :math:`a > 0`, and let *P* be a point in a plane
+xyz.
+
+The collection of points *S* is called:
+
+- **open ball** of radius *a* centered at *P* if :math:`||S-P|| < a`
+- **close ball** of radius *a* centered at *P* if :math:`||S-P|| ≤ a`
+- **sphere** of radius *a* centered at *P* if :math:`||S-P|| = a`
+
+Notice that the sphere is the shell that contains the open ball. Their union
+is the close ball.
+
+From here we can derive the concept of unit vector, which is :math:`A / ||A||`
+for a given vector. We simply divide the vector to its magnitude.
+Again we can say that :math:`A` and :math:`B` have the same direction if
+:math:`B = A \times k`, *k* being a scalar that satisfies :math:`k>0`
+
+
 Eigenvalues & Eigenvectors
 ===========================
 
@@ -299,5 +341,3 @@ Formally, eigenvectors are defined as follows:
 - A is the transformation matrix
 - v is the eigenvector
 - lambda is the eigenvalue
-
-

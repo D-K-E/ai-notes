@@ -1,0 +1,239 @@
+Notes taken mostly from wikipedia
+
+Topological Space
+------------------
+
+Now a topological space consist of a set of points and a set of neighbourhoods
+for points. It also satisfies a set of axioms with respect to points and their
+neighbourhoods. As you can see it is pretty general.
+
+The axioms that define a topological space are the following:
+Let X be a collection of n dimensional points.
+Let N be a function whose domain is X and co domain is a subset of X.
+
+- Each point belongs to every one of its neighbourhoods. 
+  Formally, if :math:`A \in N(x)` then :math:`x \in A`
+
+- Every superset of a neighbourhood of x is also a neighbourhood of x.
+  Formally, let :math:`A \in N(x)`, if :math:`A \in B` and :math:`B \subset X` then
+  :math:`B \in N(x)`
+
+- The intersection of two neighbourhoods of x is also a neighbourhood of x.
+  Formally let :math:`A, B \in N(x)` then :math:`(A ∩ B) \in N(x)`
+
+- Any neighbourhood A of x contains a neighbourhood B of x, such that A is
+  also a neighbourhood of each point of B. Formally, :math:`A \in N(x)` and
+  :math:`B \in N(x)`, and :math:`B \subset A`. If :math:`b \in B` then :math:`A \in N(b)`
+
+It can also be defined using open sets, which I find it to be a little easier
+to visualize:
+Let *X* be a collection of points. 
+Let *U* be a subset of *X*. *U* is defined as open set if *U* is a
+neighbourhood of all points in *U*. Then a topological space is an
+ordered pair of *(X, t)* where *t* is a collection of subsets of *X*. *t*
+satisfies the following axioms:
+
+- The empty set and X itself belong to t.
+- Any arbitrary members union of t belongs to t.
+- Any intersection of members of t belongs to t.
+
+For example: :math:`X = {1,2,3}` and a corresponding collection would be
+:math:`U_1 = {{}, {1}, {2}, {1, 2}, {1, 2, 3}}` or it can be something like
+:math:`U_2 = {{}, {2}, {1, 2}, {2, 3}, {1, 2, 3}}` as you can see the
+collection *U* clearly contains *X* but it has a different structure than *X*.
+In a manifold the members of such a collection had an equivalence in euclidean
+space.
+
+Manifold
+---------
+
+A manifold is simply a specific topological space where the neighbourhood of
+each point is homeomorphic to euclidean space. 
+
+Now the term homeomorphic means that there exists a continuous function
+with an inverse continuous function between two topological spaces.
+Formally there exists a function :math:`f: X \to Y` who satisfies the
+following conditions:
+
+- f is a bijection, meaning that every element of the set X has exactly one
+  correspondent in set Y such that each element from both sets can not be
+  paired with more than one element. This implies that both sets have the same
+  number of elements and that each pair is unique, and the intersection of any
+  pair is empty set.
+
+- f is continuous, that is for each element of X there exists a mapping with
+  value in Y 
+
+- :math:`f^{-1}` is also continuous, that is for each value that is mapped by
+  the function f, there exists a function that maps the value back to the
+  domain of f. Formally if :math:`f(x) = y` for all :math:`x \in X` then for all
+  :math:`y \in Y` :math:`f^{-1}(y) = x`.
+
+Now with the given definition of homeomorphic we can understand easily the
+definition of a manifold. Since a manifold is a topological space, it consists
+of a set of points *X*, and a collection of subsets of *X*. These subsets are
+homeomorphic to euclidean space, that means that they can be
+mapped one-to-one and onto an euclidean space thus satisfying the above
+mentioned conditions of homeomorphism. 
+
+Now a subset in the collection, in the context of a manifold, is called a
+*chart*. The entire collection is called an *atlas*. When we have a point that
+appear in different neighbourhoods, we can have a function that maps from
+neighbourhood to manifold and back to neighbourhood, these functions are
+called *transition maps*.
+
+Now let's see the whole thing in action:
+
+Let's think of a unit circle, whose center is (0,0), with :math:`r=1`.
+Let's divide it into 4 overlapping parts: top arc which covers for top half of
+the circle, bottom arc, right arc, left arc, each covering the half of the
+circle.
+
+The each point on the top arc can be described its x coordinate. We can then
+imagine a function, more specifically a projection, that maps a given
+coordinate to an open interval (leftMostXCoordinate, rightMostXCoordinate),
+meaning in our case (-1, 1). 
+Why (-1,1) ? Because we are dealing with unit circle, that is centered on
+(0,0).
+Formally our function would be something like this: :math:`X_{top}(x, y)=x`.
+For other arcs we would have the following:
+
+- :math:`X_{top}(x,y) = x`
+- :math:`X_{bottom}(x,y) = x`
+- :math:`X_{left}(x,y) = y`
+- :math:`X_{right}(x,y) = y`
+
+These functions are called *charts* in the context of a manifold. They simply
+represent a certain region of the manifold. They are also specific to that
+region. Why ? Because their behaviour is local. :math:`X_{top}` behaves the
+way it does because its domain is top arc, if its domain was, for example, left
+arc, maybe the equivalency specified in its definition above would not hold
+true.
+
+Now the top half and right half have an overlapping part, a quarter at the
+positive side of both axes.
+Both :math:`X_{top}` and :math:`X_{bottom}` maps this overlapping part to an
+(0,1) interval.
+
+Now the question is how do we represent this common part with these two
+functions.
+We can represent it with a function which maps from the co-domain of `X_{top}`
+to the co domain of `X_{right}`.
+We would have for example :math:`T: (0,1) \to (0,1)`.
+Why can we represent this common part with such a function ?
+Let's examine what this function does:
+Let :math:`k \in (0, ..., 1)`, :math:`T(k) = X_{right}(X^{-1}_{top}(k))`
+So function *T* is composed of the inverse of :math:`X_{top}` and
+:math:`X_{right}`.
+The inverse of :math:`X_{top}`, maps the value back to the point on circle, and
+:math:`X_{right}` maps that point coordinate to the given range again.
+
+Let's see the function in action. Let's take a point from the common part in
+question, for example :math:`P = (\cos{a}, \sin{a})`
+
+- let :math:`a = 45`.
+- :math:`\cos{a} = ~0.525`
+- :math:`\sin{a} = ~0.851`
+- :math:`P = (0.525, 0.851)`
+
+- :math:`X_{top}(0.525, 0.851) = 0.525`
+- :math:`X_{right}(0.525, 0.851) = 0.851`
+- :math:`T(0.525) = X_{right}(X^{-1}_{top}(0.525))`
+- :math:`T(0.525) = X_{right}(0.525, 0.851)`
+- :math:`T(0.525) = 0.851`
+
+As you can see the function captures the point in common part.
+This function, in the context of manifolds, is called *transition map*. It
+makes the transition between two charts.
+
+Now in order to make a transition to differentiable manifold, we need to cover
+the basics of differentiable functions. Please note that *charts* are simply a
+collection of functions, and since we describe a manifold with a collection of
+charts, differentiability of manifolds relate to the differentiability of the
+charts that made up the collection which describes the manifold.
+
+Differentiable Manifold
+------------------------
+
+Let's clarify what we mean by differentiable when we are talking about
+manifolds.
+
+A function :math:`f: P \subset R \to \mathbb{R}` is said to be differentiable at
+:math:`p \in P` when we can compute its derivative, meaning that we have a
+solution for the following operation:
+
+- :math:`f^{(1)}(p) = \lim_{h \to 0} \frac{f(p+h) - f(p)}{h}`
+
+This also implies that at the given point *p* the function is continuous.
+However continuity does not imply differentiability.
+
+If a function's first order derivative is continuous, that is for each value
+in its domain we can compute its derivative, then the function is of class 1.
+The notation for this is :math:`C^{1}`. If it is denoted to be of class 3,
+meaning :math:`C^{3}` than its first order, second order and third order
+derivatives are continuous. Generally speaking if a function is of class k
+:math:`C^{k}`, it means that derivatives :math:`f^{(1)}, f^{(2)}, ..., f^{(k)}`
+are all continuous. A smooth function is continuous for all positive integer
+values of k and it is denoted by the class infinite, :math:`C^{\infty}`.
+
+What if our function has more than one variables, like *f(x,y)*, how do we
+compute the derivative then ?
+The answer is using partial derivatives. The logic is quite the same as the
+computation of derivatives. Let's see an example:
+
+- :math:`f(x,y) = x^2 + yx + y^2` is our function.
+
+- We can also think of this function as :math:`f(g_{x}(y))`, that is as a
+  family.
+
+- We define the :math:`g(k) = x^2 + xk + k^2`. We simply treat the x variable
+  as a constant in the function *g*.
+
+- The derivative of the function *g* is easier to compute now:
+
+  - Since :math:`x^2` is just a constant now, it amounts to zero
+    :math:`g^{(1)}(k) = xk + k^2`
+  - :math:`g^{(1)}(k) = x + 2k`
+
+- The derivative of our function is :math:`f^{(1)}(x,y) = x + 2y`
+
+This is generalized as the following,
+
+.. math::
+
+    \frac{\partial{f}}{\partial{x_i}}(a_1, ..., a_n) = \lim_{h \to 0} 
+    \frac{f(a_1, ..., a_i + h, ..., a_n) - f(a_1, ..., a_i, ..., a_n)}{h}
+
+It reads as follows: For an n dimensional point :math:`a = (a_1, ..., a_n)`,
+the partial derivative in the :math:`x_i` direction/dimension, is computed by
+dividing the difference of the first term and point *a* to h who
+approaches to 0. The first term is obtained by adding *h* to point :math:`a' = (a_1,
+..., a_i + h, ..., a_n` at the given dimension.
+
+Now we have the necessary ground work for understanding what makes a manifold
+differentiable. It is basically the differential structure that makes a set M
+a differentiable manifold.
+
+The differential structure of a manifold means that our charts are
+:math:`C^{k}` functions, that is their derivatives are continuous up to order
+k, making them :math:`C^{k}` compatible.
+The definition of compatibility is the following:
+
+- Let M be the set of points for the manifold.
+- Let m be an n dimensional point of M: 
+  :math:`m \in M` and :math:`m = (x_1, ..., x_n)`
+
+- Let :math:`f_i = W_i \subset M \to U_i \subset \mathbb{R}^{n}`
+- Let :math:`f_j = W_j \subset M \to U_j \subset \mathbb{R}^{n}`
+- Intersection of the domains of these two would be 
+  :math:`W_{ij} = W_i \cap W_j`
+- :math:`U_{ij} = f_{i}(W_{ij})` and :math:`U_{ji} = f_{j}(W_{ij})`
+
+- :math:`t_{ij}: U_{ij} \to U_{ji}`
+- :math:`t_{ij} = f_{i}(f_{j}^{-1}(m)`
+
+Here :math:`t_{ij}` is the transition map. The compatibility requirement is
+that :math:`U_{ij}` and :math:`U_{ji}` are open, that is they are not bounded,
+and that transition maps :math:`t_{ij}` and :math:`t_{ji}` have continuous
+partial derivatives of order *k*. If this holds true for all transition maps
+and charts etc, than the manifold is a differentiable manifold.
