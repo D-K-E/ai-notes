@@ -1,3 +1,49 @@
+##########
+Manifolds
+##########
+
+Notes on manifolds taken from different sources. 
+The first use case that pushed me to read upon manifolds is rendering of
+normal maps.
+
+
+Prerequisites
+==============
+
+Taken from Lee, John, Introduction to Topological Manifold, 2000, Springer
+
+This is mostly a remainder on the fundamentals of the knowledge required to
+understand the manifold theory.
+
+Set Theory
+-----------
+
+Set is mathematically an undefined term. It should be thought of an assemblage
+of mathematical objects. The relation between a set and its elements is called
+membership. It is also mathematically undefined. However there is a notation
+for it :math:`x \in S`, *x* being the element and *S* is the set. The sign
+between them is read as *is a member of*, so the whole statement is read as *x
+is a member of S*. 
+
+A set is qualified by its members, so if *S=T* then :math:`x \in T` as well.
+If a set *G* contains another set *K*, then this is denoted by 
+:math:`K \subset G`.
+If :math:`K \neq G`, then *K* is a *proper subset* of *G*.
+If :math:`K = G` then :math:`K \subset G` and :math:`G \subset K`
+
+- Specification Axiom: Given a set *S* and a proposition *P(x)* that is either
+  true or false whenever x is any particular element of *S*, there is a set
+  consisting of all those :math:`x \in S` for which *P(x)* is true. This is
+  denoted by :math:`{x \in S: P(x)}`
+
+- Power set Axiom: Given any set *S*, there is a set *P(S)*, called the power
+  set of *S* whose elements are subset of *S*.
+
+- Union Axiom:
+
+
+
+
 Notes taken mostly from wikipedia
 
 Topological Space

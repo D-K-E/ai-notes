@@ -255,7 +255,7 @@ For any vector :math:`||A|| = ||-A||`, since their direction does not relate
 to their magnitude.
 
 The distance between points A, B is defined as :math:`||A-B|| =
-\sqrt{(A-B){\dot}(A-B)}`. Naturally :math:`||A-B||=||B-A||`
+\sqrt{(A-B){\cdot}(A-B)}`. Naturally :math:`||A-B||=||B-A||`
 
 We can also define circles and disks this way for 2d.
 
@@ -279,10 +279,111 @@ The collection of points *S* is called:
 Notice that the sphere is the shell that contains the open ball. Their union
 is the close ball.
 
-From here we can derive the concept of unit vector, which is :math:`A / ||A||`
+From here we can derive the concept of **unit vector**, which is :math:`A / ||A||`
 for a given vector. We simply divide the vector to its magnitude.
 Again we can say that :math:`A` and :math:`B` have the same direction if
 :math:`B = A \times k`, *k* being a scalar that satisfies :math:`k>0`
+
+Having two perpendicular vectors, that is, :math:`A \cdot B = 0`, has
+an interesting correlation, :math:`||A-B|| = ||A+B||`.
+Why ?
+
+.. math::
+   
+   ||A+B||^2 = ||A-B||^2
+    A^2 + 2A \cdot B + B^2 = A^2 - 2A \cdot B + B^2
+    4A \cdot B = 0
+    A \cdot B = 0
+
+Another thing that is interesting is that having a general Pythagoras theorem:
+
+.. math::
+
+    ||A+B||^2 = ||A||^2 + ||B||^2
+    (A+B) \cdot (A+B) = ||A||^2 + ||B||^2
+    A^2 + 2A \cdot B + B^2 = ||A||^2 + ||B||^2
+    A \cdot B = 0
+    \therefore
+    A^2 + B^2 = ||A||^2 + ||B||^2
+
+
+These properties of perpendicular vectors permit us to define the notion of
+**projection** one vector to another.
+
+Now let's say we have vectors *A* and *B* that intersect at point *K*. Suppose
+that they are in the same direction. Imagine a vector that descends from the
+tip of *A*, point *T*, to *B* that is perpendicular to B and that crosses *B*
+at point *P*.
+What we have is a *KTP* triangle. Since *P* lies on *B* we can substitute it
+as :math:`cB = P`. Suppose we have another vector *G* that is perpendicular to
+*B*, but passes through point *K*. The point :math:`T - P` would
+necessarily lie on vector *G*, since *T* is at the tip of *A*, we can also
+write :math:`A-P`.
+Now the perpendicularity ensures the following :math:`(A - cB) \cdot B = 0`
+This means that :math:`c = \frac{A \cdot B}{B \cdot B}`
+
+*c* is called the **component** of *A* along *B*.
+The **projection** of *A* along *B* is 
+:math:`cB = \frac{A \cdot B}{B \cdot B} \cdot B`
+
+Now our triangle *KTP* reveals other interesting properties. For example,
+the cosinus of the angle between *KT* and *KP*, theta, is 
+:math:`\cos{\theta} = \frac{KP}{KT}` in other words
+:math:`\cos{\theta} = \frac{||cB||}{||A||}`
+
+Now if we substitute the component formula to here:
+
+- :math:`\cos{\theta} = \frac{A \cdot B}{B \cdot B} \times \frac{||B||}{||A||}`
+- :math:`\cos{\theta} = \frac{A \cdot B}{||B||^2} \times \frac{||B||}{||A||}`
+- :math:`\cos{\theta} = \frac{A \cdot B}{||B|| \times ||A||}`
+
+And also :math:`\cos{\theta} \times ||B|| \times ||A|| = A \cdot B`
+
+Parametric Lines
+=================
+
+They are lines which take their slope from a vector and their intercept from a
+point.
+
+- Let *A* be a vector that is not equal to origin
+
+- Let *P* be a point that is not on *A*.
+
+- The equation of the line passing through *P* in the direction of *A* is 
+  :math:`X = P + t \times A` where *t* is all the available numbers in the
+  field, and *X* is the output tuple for the points on line
+
+Planes
+=======
+
+Planes are quite simple to describe once we acquire the notion of
+perpendicularity.
+
+- Let *P* be a point in 3d space.
+- Let *X* be another point in 3d space
+- Let *N* be a vector that is perpendicular to the segment :math:`X - P`
+
+- Then a plane *T* is the collection of all points that satisfy the following
+  equation :math:`(X-P) \cdot N = 0`, where *P* and *N* are known.
+
+N is also called **normal**.
+
+Two planes are perpendicular if their normals are perpendicular.
+Two planes are parallel if their normals are parallel.
+The angle between two planes are defined by the angle between their normal
+vectors
+
+The distance between a plane and an arbitrary point *Q* works out as the
+following.
+I have a point *Q*, a point *L* which is on the plane and a point *P* which is
+another known point on plane. We suppose that the segment *QL* is
+perpendicular to the plane. Thus we are looking for its norm.
+
+This situation is very similar to where we observed components and projections
+of vectors to one another. Here we have a *QLP* triangle. The direction of the
+segment *QL* is the same as normal of the plane.  First we need to find the
+component of *QP* along *QL*. The norm of the component times *QL* is the
+value we are searching for.
 
 
 Eigenvalues & Eigenvectors
@@ -309,6 +410,34 @@ Why ? Let's multiply the vector with the matrix B
 
 So our first vector was changed both in terms of magnitude (it is longer now),
 and in direction (it points to a different direction now)
+
+Coordinate Isomorphism
+-----------------------
+
+Let *V* be a vector space over a field *R*, and 
+:math:`B = \{b_1, b_2, ..., b_{n}  \}` is a basis of *V*.
+If *v* is a vector in *V*, then 
+:math:`v = b_1 {\cdot} x_1, b_2 {\cdot} x_2, ..., b_n {\cdot} x_{n}`.
+:math:`X = \{ x_1, x_2, ..., x_{n} \}` is called the coordinate tuple of *v*
+relative to *B*. 
+Since :math:`X^{T} \in R^{n}`, let :math:`f: R^{n} \to V` 
+where :math:`f(o_{i}) = b_i` for :math:`i = 1, ..., n`. The function *f* is
+called a coordinate isomorphism for *V* and basis *B*. The :math:`o_i` denotes
+the n tuple with element i equal to 1 and all the others equal to 0.
+
+
+Change of Basis of a Vector using Linear Transformations
+---------------------------------------------------------
+
+The case is more or less that of a manifold.
+Suppose :math:`A = \{a_1, a_2, ..., a_{n}  \}` and 
+:math:`B = \{b_1, b_2, ..., b_{n}  \}` are basis of a vector space *V* over a
+field *K*. Let :math:`f_{A}` and :math:`f_{B}` be two coordinate isomorphisms
+that map coordinate tuples to vector v: :math:`f_{A}(X) = v` and
+:math:`f_{B}(Y) = v` with *X* being coordinate tuple of *v* relative to *A*,
+and *Y* being coordinate tuple of *v* relative to *B*.
+The map :math:`f_{B}^{-1}(f_{A}(X))` maps a coordinate tuple relative to *A*
+to a coordinate tuple relative to *B*.
 
 
 Eigenvectors & Eigenvalues

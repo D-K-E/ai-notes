@@ -62,6 +62,26 @@ The derivative of f(x)*G(x) is f'(x)*G(x)+f(x)*G'(x).
 That is derivative of f(x) times the G(x) plus
 f(x) times the derivative of G(x).
 
+Here is its proof:
+
+.. math::
+
+    p(x) = f(x) \times g(x)
+    p'(x) = \lim_{h \to 0} \frac{p(x+h) - p(x)}{h}
+    v = f(x) \times g(x+h)
+    p'(x) = \lim_{h \to 0} \frac{p(x+h) - p(x) + v - v}{h}
+    p'(x) = \lim_{h \to 0} \frac{(f(x+h) \times g(x+h)) - (f(x) \times g(x)) + v - v}{h}
+    p'(x) = \lim_{h \to 0} \frac{(f(x+h) \times g(x+h)) - v + v - (f(x) \times g(x))}{h}
+    p'(x) = \lim_{h \to 0} \frac{(f(x+h) \times g(x+h)) - (f(x) \times g(x+h))  + v - (f(x) \times g(x))}{h}
+    p'(x) = \lim_{h \to 0} \frac{ ((f(x+h) - f(x)) \times g(x+h)) + v - (f(x) \times g(x))}{h}
+    p'(x) = \lim_{h \to 0} \frac{ ((f(x+h) - f(x)) \times g(x+h)) + f(x) \times (g(x+h) - g(x))}{h}
+    p'(x) = f'(x) \times \lim_{h \to 0} g(x+h)) + f(x) \times g'(x)
+    p'(x) = f'(x) \times g(x) + f(x) \times g'(x)
+
+We replace :math:`\lim_{h \to 0} g(x+h)` with :math:`g(x)` since *h* is very
+very close to 0, and we know that since *g(x)* is a differentiable function it
+must be continuous.
+
 Division Rule
 --------------
 
