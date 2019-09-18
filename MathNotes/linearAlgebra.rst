@@ -221,26 +221,25 @@ See section Scalar/Dot Product for Points
 
 Rule:
 
-- let 
-  :math:`P = (p_1, p_2, ..., p_n)`
-  :math:`Q = (q_1, q_2, ..., q_n)`
-  :math:`C = (c_1, c_2, ..., c_n)`
-  :math:`D = (d_1, d_2, ..., d_n)`
-  :math:`O = (0, 0, ..., 0)`
-  :math:`\vec{PQ} = (P, Q)`
-  :math:`\vec{CD} = (C, D)`
-  :math:`\vec{PQ} = \vec{(Q-P)O}`
-  :math:`\vec{CD} = \vec{(D-C)O}`
-  :math:`A = \vec{(Q-P)O} = ((Q-P), O)`
-  :math:`B = \vec{(D-C)O} = ((D-C), O)`
-  :math:`A = ((q_1 - p_1, q_2 - p_2, ..., q_n - p_n), (0, 0, ..., 0))`
-  :math:`B = ((d_1 - c_1, d_2 - c_2, ..., d_n - c_n), (0, 0, ..., 0))`
-  :math:`A = ((a_1, a_2, ..., a_n), (0, 0, ..., 0))`
-  :math:`B = ((b_1, b_2, ..., b_n), (0, 0, ..., 0))`
-  :math:`A \dot B = ((Q - P) \dot (D - C), 0 \dot 0)`
-  :math:`A \dot B = (a_1{\times}b_1 + a_2{\times}b_2 + ... + a_n{\times}b_n, 0)`
-  :math:`s` is a number
-  :math:`A \dot B = (s, 0) = \vec{PQ} \dot \vec{CD}`
+- :math:`P = (p_1, p_2, ..., p_n)`
+- :math:`Q = (q_1, q_2, ..., q_n)`
+- :math:`C = (c_1, c_2, ..., c_n)`
+- :math:`D = (d_1, d_2, ..., d_n)`
+- :math:`O = (0, 0, ..., 0)`
+- :math:`\vec{PQ} = (P, Q)`
+- :math:`\vec{CD} = (C, D)`
+- :math:`\vec{PQ} = \vec{(Q-P)O}`
+- :math:`\vec{CD} = \vec{(D-C)O}`
+- :math:`A = \vec{(Q-P)O} = ((Q-P), O)`
+- :math:`B = \vec{(D-C)O} = ((D-C), O)`
+- :math:`A = ((q_1 - p_1, q_2 - p_2, ..., q_n - p_n), (0, 0, ..., 0))`
+- :math:`B = ((d_1 - c_1, d_2 - c_2, ..., d_n - c_n), (0, 0, ..., 0))`
+- :math:`A = ((a_1, a_2, ..., a_n), (0, 0, ..., 0))`
+- :math:`B = ((b_1, b_2, ..., b_n), (0, 0, ..., 0))`
+- :math:`A \dot B = ((Q - P) \dot (D - C), 0 \dot 0)`
+- :math:`A \dot B = (a_1{\times}b_1 + a_2{\times}b_2 + ... + a_n{\times}b_n, 0)`
+- :math:`s` is a number
+- :math:`A \dot B = (s, 0) = \vec{PQ} \dot \vec{CD}`
 
 
 Norm of a Vector
