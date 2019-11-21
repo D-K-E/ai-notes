@@ -381,9 +381,23 @@ perpendicular to the plane. Thus we are looking for its norm.
 This situation is very similar to where we observed components and projections
 of vectors to one another. Here we have a *QLP* triangle. The direction of the
 segment *QL* is the same as normal of the plane.  First we need to find the
-component of *QP* along *QL*. The norm of the component times *QL* is the
-value we are searching for.
+component of *QP* along *QL*. Why ? Because simply put the smallest distance
+between Q and plane is the length of a line which descends orthogonally from Q
+to plane. From our definition, *QL* is that line.
 
+In order to find the length of *QL*, we ask ourselves the following question:
+What is the proportion of the length of *QL* to the length of *QP* ? The
+reason for this question is simple, since the point P is known and thus the
+distance between *Q* and *P* can be computed, if I can define the length of
+*QL* with respect to *QP*, I can compute it as well. 
+
+This whole setup is same as finding the projection of *QP* along with *QL*:
+:math:`c \times \vec{QP} = \vec{QL}`. The natural question is how can we
+compute :code:`c`? Since *QL* is parallel to the normal of the plane, it can
+be written as :math:`\vec{QL} = N \times k`. The length of *QL* is then equal
+to the length of unit normal vector times a scalar value.We also know that
+since *QL* is perpendicular to the plane, it is perpendicular to the line
+*LP*. Thus we know the hypotenuse of the right triangle *QLP*.
 
 Eigenvalues & Eigenvectors
 ===========================
@@ -469,3 +483,18 @@ Formally, eigenvectors are defined as follows:
 - A is the transformation matrix
 - v is the eigenvector
 - lambda is the eigenvalue
+
+
+Rotation in 3d
+===============
+
+The notes follow more or less the structure of
+https://petercollingridge.appspot.com/3D-tutorial/rotating-objects
+
+Let's start with a simple example: a point on x axis. (p, 0).
+Let's say we would like to rotate it at the angle of :code:`\theta`.
+Now the distance between the new location of the point and the origin (0,0)
+should be p since the old distance was equal to p as well.
+
+We take p as a hypotenuse of a right triangle ABC. Now the point A is the
+origin, and point B (p', y').
