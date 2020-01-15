@@ -2,26 +2,77 @@
 Differential Calculus
 #####################
 
+Inifinite Numeric Sequence
+===========================
+
+Tarasov, L. V. Calculus: Basic Concepts for High Schools. Moscow; Chicago: Mir Publishers ; [Distributed by] Imported Publications, 1982.
+
+An infinite numeric sequence exists if every natural number (position number)
+is unambiguously placed in correspondance with a definite number (an element
+of a sequence) by a specific rule.
+For example:
+
+- 3 5 7 9 11
+
+- 1 2 3 4 5 where the law is x + 2 so that
+
+- x1 + 2 = 5 = x2, x2 + 2 = 7 = x3, the rule is than x_n = x_{n-1} + 2
+
+Let's look at a different sequence:
+
+1, 1/2, 3, 1/4, 5, 1/6, ...
+
+The rule is for y_n = { if n = 2k - 1, then n, else if n = 2k then 1/n }
+
+We can also express this as y_n = a_n \times n + b_n \times 1/n, and say
+a_n = 0 if n = 2k and 1 if n = 2k - 1 and b_n = 0 if n = 2k - 1 and 1 for 
+n = 2k
+
+A sequence is *nondecreasing* if 
+y_1 <= y_2 <= y_3 <= ...
+
+A sequence is *nonincreasing* if 
+y_1 >= y_2 >= y_3 >= ...
+
+A nonincreasing or nondecreasing sequences are *monotonic* sequences
+
+A sequence is bounded if there are two numbers A and B which encloses
+all the terms of a sequence so that
+A <= y_n <= B
+
+If one of the numbers is absent the sequence is unbounded.
+
+There is a somewhat puzzling case for bounded infinite sequences that are
+monotonic. For example, 0, 0.1, 0.11, 0.111, 0.111 and so on whose lower bound
+and upper bound is 0 and 1. However the problem is that the condition that our
+incrementation is decreasing does not impose the upper bound.
+
+The calculus, in the sense we use in modern mathematics, starts with the
+notion that there can be monotonic sequences that are bounded. This is ensured
+with the concept of *limit*. If a sequence is monotonic and bounded it
+necessarily has a limit.
+
+
 Limits
 =======
 
+Here is the definition of a limit:
+
+The number a is said to be the limit of sequence y_n if for any positive
+number \lambda there is a real number N such that for all n > N the following
+inequality holds:
+
+|y_n - a| < \lambda
+
+I have a sequence y with a as a limit. When I subtract the limit from any
+value of the sequence, the absolute value of this operation should be smaller
+than the number \lambda. When n is bigger than N, the difference between the
+limit number and the sequence element is smaller than the lambda.
+Tarasov p. 19
+
+
 What are limits ?
 -------------------
-
-The limit of a function f(x) at some value a,
-is simply what the value of the function approaches
-when x gets close to a.
-Most of the time x is equal to a.
-
-However there are some functions whose limits are *messy*:
-
-- Functions who are not defined at a. There is no value at a to talk of.
-  (e.g. Rational functions with the denominator as zero at the point x=a.)
-- Rational functions whose numerator or denominator appears to march off to
-  infinity. Infinity allows no limit.
-- Functions who vibrate violently around the value a. 
-- Functions who approach different values when x gets close to a from the left
-  side and the right side.
 
 
 Differentials

@@ -391,13 +391,34 @@ reason for this question is simple, since the point P is known and thus the
 distance between *Q* and *P* can be computed, if I can define the length of
 *QL* with respect to *QP*, I can compute it as well. 
 
-This whole setup is same as finding the projection of *QP* along with *QL*:
-:math:`c \times \vec{QP} = \vec{QL}`. The natural question is how can we
-compute :code:`c`? Since *QL* is parallel to the normal of the plane, it can
+Since *QL* is parallel to the normal of the plane, it can
 be written as :math:`\vec{QL} = N \times k`. The length of *QL* is then equal
-to the length of unit normal vector times a scalar value.We also know that
+to the length of unit normal vector times a scalar value. This is important
+because we know the length of the unit normal vector, it is 1. We also know
+how it is calculated it is :math:`n = \frac{N}{||N||}`. 
+
+Now instead of finding the projection of *QP* along *QL* let's try to find how
+*QP* is projected to the vector *ZL* which is parallel to normal with its
+length equal to the length of the unit normal vector, Z being a point on the
+line *QL*.
+
+
+A projection of any
+vector :math:`\vec{A}` along vector :math:`\vec{B}` is calculated with:
+:math:`cB = \frac{A \cdot B}{B \cdot B} \cdot B`. 
+We are trying to find the length of the projection of *QP* along *QL*. 
+
+Thus the formula becomes 
+:math:`c \vec{QL} = \frac{\vec{QP} \cdot \vec{QL}}{\vec{QL} \cdot \vec{QL}} \cdot
+\vec{QL}`
+
+
+We also know that
 since *QL* is perpendicular to the plane, it is perpendicular to the line
 *LP*. Thus we know the hypotenuse of the right triangle *QLP*.
+
+
+
 
 Eigenvalues & Eigenvectors
 ===========================
@@ -498,3 +519,17 @@ should be p since the old distance was equal to p as well.
 
 We take p as a hypotenuse of a right triangle ABC. Now the point A is the
 origin, and point B (p', y').
+
+Quaternions
+-------------
+
+They are devised as an extension to complex numbers. There two popular
+notations: one as complex numbers the other as 4d vector.
+First representation:
+
+:math:`w + xi + yj + zk` where :math:`i^2 = j^2 = k^2 = -1` and 
+:math:`ij = k = -ji`
+
+Second representation:
+
+:math:`[w, v]` where :math:`(x, y, z)`
