@@ -68,7 +68,12 @@ I have a sequence y with a as a limit. When I subtract the limit from any
 value of the sequence, the absolute value of this operation should be smaller
 than the number \lambda. When n is bigger than N, the difference between the
 limit number and the sequence element is smaller than the lambda.
-Tarasov p. 19
+
+Let's examine this definition. First of all for any positive \lambda there is a
+number N. There is also another number "n". When "n" is bigger than N there is
+an inequality. Now \lambda is any positive number. There are then infinite values
+that are possible for \lambda. Now the length of the sequence y_n is also infinite
+thus we have an infinite number of possible "n" values as well.
 
 
 What are limits ?
