@@ -324,4 +324,75 @@ if f or K is known, one can find the other one since it the other
 one must a assume a form that causes the probability distribution to be
 normalized.
 
-p. 2 last paragraph
+When considering families of probability distributions geometrically,
+distribution families are surfaces, probability distributions are points,
+their parameters are coordinates:
+
+
++=============================+
+|                             |
+|   +-------------------+     |
+|   |    family of      |     |
+|   |   probability     |     |
+|   |   distribution    |     |
+|   |                   |     |
+|   |   p_1             |     |
+|   |  *(t_1, t_2,...)  |     |
+|   |                   |     |
+|   |                   |     |
+|   |   p_2             |     |
+|   |  *(k_1, k_2,...)  |     |
+|   |                   |     |
+|   +-------------------+     |
+|                             |
++=============================+
+
+
+Example Gaussian family
++=============================+
+|                             |
+|   +-------------------+     |
+|   |    gaussian       |     |
+|   |   probability     |     |
+|   |   distribution    |     |
+|   |   family          |     |
+|   |                   |     |
+|   |   p_1             |     |
+|   |  *(mu_1, sigma_1) |     |
+|   |                   |     |
+|   |                   |     |
+|   |   p_2             |     |
+|   |  *(mu_2, sigma_2) |     |
+|   |                   |     |
+|   +-------------------+     |
+|                             |
++=============================+
+
+Unless we are considering the relationship between individual points, ie
+probabilities, we don't need to consider the geometric shape that occurs in
+the plane. However IF we consider the relationship between individual points,
+for example between $p_1(\mu, \sigma)$ and $p_2(\mu, \sigma)$, we don't need
+to consider the geometric shape of the resulting surface, ie. distribution
+family.
+
+
+Some notions concerning shapes come from using different geometry or
+coordinate systems. For example, when we are talking about the distance
+between two points of triangle, the notion distance is defined under the
+assumption that the space in which we are dealing with the triangle has
+coordinates. Thus the notion of coordinates which is imposed by the usage of
+euclidean/affine geometry impacts our analysis with respect to the shape at
+hand.
+
+Here is the thing though, the triangle is also a triangle BECAUSE the
+notion of distance affects it. For example on a surface defined on cartesian
+coordinate system, what is the difference between a Point, and a Triangle, the
+Point can not be associated with the notion of distance in the way a Triangle
+can. Thus the notion of distance is constitutive difference between a Triangle
+and a Point.
+
+p. 3, 3. paragraf
+
+
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
