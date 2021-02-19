@@ -391,8 +391,45 @@ Point can not be associated with the notion of distance in the way a Triangle
 can. Thus the notion of distance is constitutive difference between a Triangle
 and a Point.
 
-p. 3, 3. paragraf
+Now when we are dealing with a certain probability distribution that is not
+expressed in exponential form, it does not necessarily mean that the
+distribution is not exponential. It has to be PROVED that the distribution can
+not be parametrised/expressed in exponential form.
 
+### Canonical Coordinates
 
+Let's write an exponential distribution:
+
+$$ p(x, \theta) = \exp( \sum_{i=1}^r x^i \theta^i - K(\theta)$$
+canonical parameters of this distribution is 
+$\theta = {\theta^1, \theta^2, ..., \theta^r} \in R^r$
+
+Here is the question, how canonical is $\theta$ ? 
+First how do we know that the parameter is a canonical parameter. We know that
+a certain parameter group is canonical by its invariant property which is
+expressed in terms of restrictions over the set of values. Basically we ask
+the following: Can we back to these coordinates after a set of
+transformations. For example, 
+
+- what if I have another function J(\theta):
+  - $ p(x, \theta) = \exp( \sum_{i=1}^r x^i \theta^i - J(\theta)$
+
+- what if I have another random variable y^i:
+  - $ p(x, \theta) = \exp( \sum_{i=1}^r y^i \theta^i - K(\theta)$
+
+- or what if I have transformation over the parameter:
+  - $ p(x, \theta) = \exp( \sum_{i=1}^r x^i \phi(\theta^i) - K(\theta)$
+
+- or what if we have all of them:
+  - $ p(x, \theta) = \exp( \sum_{i=1}^r y^i \phi(\theta^i) - J(\theta)$
+
+Can we say the following:
+ $$
+ p(x, \theta)
+ =  \exp( \sum_{i=1}^r x^i \theta^i - K(\theta) 
+ =  \exp( \sum_{i=1}^r y^i \phi(\theta^i) - J(\theta)
+ $$
+
+ p. 4, Canonical Coordinates
 
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
