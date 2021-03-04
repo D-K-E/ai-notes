@@ -317,7 +317,7 @@ family:
 
 - :math:`n` is a measure on some sample space
 
-- :math:`K` is an arbitrary function
+- :math:`K` is an arbitrary function, helps us to normalize the distribution.
 
 Let :math:`f` be a function whose domain is :math:`\{\theta^1x^1, ..., \theta^Nx^N\}`
 if f or K is known, one can find the other one since it the other
@@ -401,6 +401,7 @@ not be parametrised/expressed in exponential form.
 Let's write an exponential distribution:
 
 $$ p(x, \theta) = \exp( \sum_{i=1}^r x^i \theta^i - K(\theta)$$
+
 canonical parameters of this distribution is 
 $\theta = {\theta^1, \theta^2, ..., \theta^r} \in R^r$
 
@@ -408,7 +409,7 @@ Here is the question, how canonical is $\theta$ ?
 First how do we know that the parameter is a canonical parameter. We know that
 a certain parameter group is canonical by its invariant property which is
 expressed in terms of restrictions over the set of values. Basically we ask
-the following: Can we back to these coordinates after a set of
+the following: Can we switch back to these coordinates after a set of
 transformations. For example, 
 
 - what if I have another function J(\theta):
@@ -426,10 +427,85 @@ transformations. For example,
 Can we say the following:
  $$
  p(x, \theta)
- =  \exp( \sum_{i=1}^r x^i \theta^i - K(\theta) 
- =  \exp( \sum_{i=1}^r y^i \phi(\theta^i) - J(\theta)
+ =  \exp( \sum_{i=1}^r x^i \theta^i - K(\theta) )
+ =  \exp( \sum_{i=1}^r y^i \phi(\theta^i) - J(\theta) )
  $$
 
- p. 4, Canonical Coordinates
+---
+
+$$ p(x, \theta) = \exp( ( \sum_{i=1}^r y^i \phi^i(\theta) ) - J(\theta) + f(x) ) $$
+
+$$ p(x, w) = b(w)\exp(<w, t(x)> - k(w)) $$
+
+k: function whose domain is w and codomain is real number set.
+t: function whose domain is x and codomain is $R^d$, the output is a vector.
+b: function whose domain is x and codomain is real number set.
+
+Here are the terms of this equation:
+
+- $\exp$ exponential operator: $\exp(x) = e^x$
+
+- $\sum$ summation function: $\sum_{i=1}^{n=3} i = 1 + 2 + 3$
+
+- $x$: a random variable: Random variable is a real valued function defined over an
+  interval with a probability distribution. Random variable is a measurable
+  function $X: \Omega \to E$. $\Omega$ sample space, $E$
+  measurable space. $\Omega = (\omega, F, P)$ $\omega$ set of possible
+  outcomes, $F$ event space, $P$ probability function with a real value
+  between [0, 1].
+
+- Y: a set of random variables whose members are defined over x, that is 
+  $Y = g(x)$ where $g: R \to R$. The cumulative distribution function of Y must
+  satisfy the following: $F_{Y}(y) = P(g(X) \le y)$
+
+- $y^i$: member i of the set of random variables Y.
+
+- $\theta$: parameter set of a probability distribution
+
+- $\theta^i$: member i of the parameter set $\theta$
+
+- $\phi$: is a set of functions that are defined over the parameter set theta.
+
+- $\phi^i$ is a function whose domain is parameter set $\theta$, whose
+  codomain is real number set.
+
+- $J(\theta)$ is a function whose domain is parameter set $\theta$ and whose
+  codomain is real number set.
+
+- $f$ is a function whose domain is the output of random variable x, and whose
+  codomain is real number set.
+
+So the function $p(x, \theta)$ outputs a real number.
+
+Canonical parameters of two different members of the exponential
+family are related by the following equation:
+
+$$\theta^i = \sum_{j=1}^r X_j^i \phi^j + \xi^i$$
+
+- i means the ith member.
+- j means the jth member.
+
+The relationship between canonical parameters of two exponential
+parametrization is same as the relationship between two cartesian coordinate
+systems defined over the same plane. In the case of a cartesian system the X_j
+is the rotation matrix, $\xi_j$ is the translation vector.
+
+We can use the notion of canonical parameters/coordinates to define
+geometric concepts. For example, we can define the notion of a straight line
+in an exponential family. Remember each point is a member of an exponential
+family, whose parameters are its coordinate. Hence a line is simply a subset
+of the exponential family whose parameters/coordinates obey a certain
+constraint. We say that a subset K of an exponential family is a line if its
+image under some canonical coordinate set is a line in $R^r$ where $r$ is the
+dimension of each coordinate. This property, that is being a line, is
+independent of coordinates/parameters because a line is still a line under an
+affine transformation. What is then an affine transformation ?
+
+Affine spaces
+--------------
+
+p. 6
+
+
 
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
