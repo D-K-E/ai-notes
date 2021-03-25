@@ -504,8 +504,108 @@ affine transformation. What is then an affine transformation ?
 Affine spaces
 --------------
 
-p. 6
+Affine spaces are set of points. The points in this set has specific property
+that when a special point, called origin is given, the other points behave
+like vectors. The allowed behavior, that is the operations allowed by this
+behavior define this set of points as an affine space.
+Once the origin point is defined, the other points are tips of arrows based at
+the chosen origin, and they are added or multiplied by scalars according to
+parallelogram rules applied to their corresponding arrows.
+For example $\vec{A(0,5)} + 5 = \vec{(5, 10)}$
 
+Let's consider two points:
+
+*********************
+*
+*   ^ "p+v"(1, 4)
+*   |  
+*   | "v"
+*   |  
+*   + "p"(1, 1)
+*
+*
+*********************
+
+Given a vector $v$ and a point $p$ like above. The tip of the vector $v$ can
+be defined as $p + v$. From this point of view, the vector $v$ is an
+translation operation which sends $p$ to $p+v$. Let's denote this operation
+$+v$
+
+Basically in affine spaces a choice of origin point sets up a one-to-one
+correspondance between points and vectors. For example if $p$ is the point of
+origin, and another point $q$ is defined. There is always a vector $v$ which
+is defined by the equation $p = q + v$. This means that $q$ corresponds to the
+vector $v$ which translates $p$ to $q$.
+
+A general affine space is defined as a set $X$ and a vector space $V$, each 
+$v \in V$ corresponds to a transformation $+v$ from $X$ to $X$, that is to
+itself. This transformation is called translation by $v$. The translations
+have to satisfy two rules:
+
+- $(p + v) + w = p + (v + w)$ for any point $p$ and vectors $v$ and $w$
+- given any $x,y \in X$ there must be a unique translation that moves one to
+  another.
+
+A characteristic of affine spaces are the presence of affine coordinates.
+These coordinates are special coordinate systems. Let's give an example based
+on the plane.
+
+Let's consider two vectors $v_1, v_2$, that are linearly independent, that is,
+$v_1 \cdot v_2$. Linearly independent implies the following:
+
+$a_1 v_1 + a_2 v_2 + \dots + a_i v_i + \dots + a_n v_n = 0$ if and only if
+
+$\forall a_i = 0$
+
+No vector in the sequence can be represented as a linear combination of other
+vectors.
+
+These vectors form the basis of a space of vectors so that
+every vector $v$ in this space can be expressed uniquely in the form 
+$\theta_1 v_1 + \theta_2 v_2$. The numbers $(\theta_1, \theta_2)$ can be
+regarded as the coordinates of $v$. If the length of vectors $v_1, v_2$ are of
+unit length 1, and the angle between vectors is the right angle, and they are
+in anticlockwise order, then such a coordinate system is a Cartesian
+coordinate system. These kinds of coordinate systems are called affine
+coordinates.
+
+Here is how a general affine space works. We have a set of points, for example
+in $R^n$. We also have a set of vectors $V$. We select one of the points to be
+the origin, for example $o^n$. Now we select a set of vectors as basis from
+$V$, for example: $v_1, v_2, \dots, v_n$.
+The basis vectors are linearly independent. 
+How do we express other points with respect to $o$ without knowing their
+coordinates or having the notion of coordinates etc. Basically we express them
+as constraints on the set $V$. That is each point is defined as a constraint
+on the set $V$ for which there is a unique member of $V$ that satisfies it.
+
+For example, we have the following
+
+*********************
+*
+*      +-> "p+v=q"
+*     /  
+*    / "v"
+*   /  
+*  + "p"
+*
+*
+*********************
+
+How do we define $q$ without having the notion of distance ? If this is
+happening in an affine space, then we must have an origin let say $p$ and a
+set of vectors $V$ in which there exists a subset who consists of linearly
+independent vectors, for example: $v_1, v_2, \dots, v_n$.
+
+We can express $v$ as the following: $v = \theta_1(X, o)v_1 + \theta_2(X,
+o)v_2 + \dots + \theta_n(X, o)v_n$ v where $\theta_i$ is function whose domain
+is X, the set of points that constitute the affine space, and whose codomain
+is V. It is a bijection.  Basically it maps $v$ to $p$ using $o$, for example
+as we saw in the $p = o + v$. The better way to express this given these
+definitions would be $p = v(o)$. Hence $\theta_i(o) = v$.
+$\theta_i(o)(o) = v(o) = p$ ?
+
+p. 8, the functions ...
 
 
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
