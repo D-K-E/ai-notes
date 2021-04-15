@@ -646,7 +646,54 @@ family of transformations of the set of positive densities parametrised by
 positive functions. Positive functions act like a vector space, that is they
 help us to translate a positive density to another positive density.
 
+Summary of Shun-ici Amari:
 
+Let $S = {P(x, \theta)}$ be a statistical model consisting of probability
+density functions $P(x, \theta)$ associated to random variable $x \in X$ with
+respect to measure $\Omega$ on $X$ such that every distribution $p(x, \theta)
+\in P(x, \theta)$ is uniquely parametrized by an n-dimensional vector
+parameter $\theta = (\theta^i) = (\theta^1, \theta^2, \dots, \theta^n$.
+
+Since the set $P(x, \theta)$ of all density functions on the set of random
+variables X is a subset of $L_1$ space of functions in $x$, that is, it
+consists of series that are absolutely convergent, S is considered to be a
+subset of $L_1$ space. Statistical model $S$ is said to be geometrically
+regular when it satisfies the following regularity conditions:
+
+- Domain of the parameter $\theta$ is homeomorphic to an n-dimensional
+  Euclidean space. Homeomorphic: topologically same, that there is both a
+  continuous function between the domain parameter of $\theta$ and the
+  Euclidean space and an inverse continuous function.
+
+- Topology of S induced from $R^n$ is compatible with the relative topology of
+  S in $L_1$ space.
+
+- The support of $p(x, \theta)$ is common for all $\theta$ so that $p(x,
+  \theta)$ are absolutely continuous[1].
+
+- Every density function $p(x, \theta)$ is a smooth function in $\theta$
+  uniformly in x, and partial derivative $\frac{\delta}{\delta \theta^i}$ and
+  integration of $log p(x, \theta)$ with respect to measure $\Omega$ are
+  always commutative.
+
+- The moments of the score function $\frac{\delta}{\delta \theta^i} log p(x,
+  \theta)$ exist up to third order and are smooth in $\theta$
+
+- The Fisher information matrix is positive definite.
+
+[1]: Absolutely continuous can be defined as the following (from Wikipedia):
+
+Let I be an interval in an ordered set of real numbers, a function 
+$f: I \to R$ is absolutely continuous on I if for every positive number
+$\epsilon$, there exists another positive number $\delta$ such that whenever a
+finite sequence of pairwise disjoint sub-intervals $(x_k, y_k)$ of I with
+$x_k, y_k \in I$ satisfies:
+
+$\sum_k (y_k - x_k) < \delta$
+then
+$\sum_k |f(y_k) - f(x_k)| < \epsilon$
+
+The collection of all absolutely continuous functions on I is denoted as AC(I)
 
 p. 9, In order to give
 
