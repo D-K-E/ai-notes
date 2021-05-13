@@ -543,6 +543,7 @@ itself. This transformation is called translation by $v$. The translations
 have to satisfy two rules:
 
 - $(p + v) + w = p + (v + w)$ for any point $p$ and vectors $v$ and $w$
+
 - given any $x,y \in X$ there must be a unique translation that moves one to
   another.
 
@@ -646,6 +647,28 @@ family of transformations of the set of positive densities parametrised by
 positive functions. Positive functions act like a vector space, that is they
 help us to translate a positive density to another positive density.
 
+Now in order for a space to be an affine space, it needs to have a set of
+points, and a set of transformations.
+The set of transformations has to satisfy two rules as we had said above:
+
+- $(p + v) + w = p + (v + w)$ for any point $p$ and vectors $v$ and $w$
+
+- given any $x,y \in X$ there must be a unique translation that moves one to
+  another.
+
+Now these rules are satisfied by positive probability densities multiplied by
+$e^f$ where $f$ is a positive functions because:
+
+- unique translation that moves one to another is satisfied by $ln(p_2/p_1)$
+  where the translation is defined as $e^f * p_1$. 
+  Remember $e^{ln(x)}=x=ln(e^x)$ thus 
+  $p_1 * e^{ln(p_1/p_2)} = p_1 * p_2 / p_1 = p_2$
+
+- $(e^t * e^c) * e^b * p_1 = e^{(t+c)+b} * p_1 = $e^t * (e^c * e^b) * p_1 =
+  e^{t+(c+b)} * p_1$ which satisfies the first rule
+
+
+
 Summary of Shun-ici Amari:
 
 Let $S = {P(x, \theta)}$ be a statistical model consisting of probability
@@ -693,8 +716,91 @@ $\sum_k (y_k - x_k) < \delta$
 then
 $\sum_k |f(y_k) - f(x_k)| < \epsilon$
 
+$f(x) = x * 2 + 6$, $I = {1, 2 ,3}$, $f(I) = {8, 10, 12}$
+
+- 3
+- 4
+
 The collection of all absolutely continuous functions on I is denoted as AC(I)
 
-p. 9, In order to give
+The equivalence relation of having the same sets of measure zero, under
+suitable regularity conditions enumerated above, implies that each family of non
+negative measures has a density with respect to each other which is
+necessarily non-zero almost everywhere.
+
+
+Here
+
+- *density* probably implies $\sum_k (y_k - x_k)$ in the definition of an
+absolutely continuous function.
+
+- *Family of non negative measures* implies probably intervals in the
+  definition of absolutely continuous function.
+
+- Measure class implies the measures in any equivalence class form a family M.
+
+- *sets of measure zero* implies sets who have the same measure zero.
+
+Measure zero means the following from [cantor
+project](https://math.unm.edu/~crisp/courses/math402/spring15/CantorProject.pdf):
+
+- Let X be a subset of R, the real number line, X has measure zero if and only
+  if $\forall \epsilon > 0$, $\exists$ a set of open intervals, 
+  ${l_1, \dots, l_k}, 1 \le k \le \infty$ such that:
+
+  - $X \subset {l_1, \dots, l_k, \dots, l_{\infty}}$ 
+
+  - $\sum_{k=1}^{\infty} |l_k| \le \epsilon$
+
+We let the $R_{\Omega}$ be the vector space of measurable functions on
+$\Omega$ and we let translation by f be the operation sending measure
+$d_{\mu}$ into $e^f * d_{\mu}$, meaning that translation by f means
+multiplying by $e^f$.
+
+Now if $\mu$ is the measure in measure class M, that is the measure class
+which contains the measures who have the same sets of zeros, once we express
+the densities with respect to it, it becomes the origin of an affine
+coordinate system.
+
+The $\mu$ then becomes the base measure, other points inside M then become
+translatable by the use of ln function, since $e^{ln(x)}=x=ln(e^x)$ as we had
+seen in the example above in the case of $p_1$ and $p_2$.
+That is if there is a map: $l: M \to R_{\Omega}$ whose input is a probability
+density and whose output is a vector of real numbers, that map translates a
+density to another density using the base density as reference.
+
+We assume that a probability measure is a scale, a proportion between a
+measure and the total mass of the function. Stated in this way, a probability
+measure becomes an equivalence class for functions. Since with respect to
+their probability measure, the functions become equivalent.
+
+Basically we treat the functions the same way we treat integrals, if two
+integrals differ by a constant then one is good as the other since, they would
+have the same derivative. In the case of measurable functions, two functions
+that differ by a constant will translate a measure into measures which differ
+only by scale.
+
+$f(x) = x * 2$
+$g(x) = x * 2 + 3$
+
+$e^{f(x)} = e^{x * 2} = (e^x)^2$ ??
+$e^{g(x)} = e^{x * 2 + 3} = e^{x * 2} e^3 = (e^x)^2 e^3$ ??
+
+s1: {111, 22, 333, 5555, 22} p(s1=22) = 2/5
+s2: {112, 22, 334, 5556, 22} p(s2=22) = 2/5
+
+$\Omega = {1, 2}$
+
+$\mathbb{R}_{\Omega} = {f_1, f_2, \dots,f_i,\dots, f_n}$ where $f_i$ is a
+random variable.
+$f_i$ can be fixed to a value in $\mathbb{R}^2$ because $f_i$ can be
+identified using $f_i$'s image, $(f_i(1), f_i(2)) \in \mathbb{R}^2$.
+
+Basically the behavior of a set of probability measures when
+transformed by a constant function distinguishes the set of probability
+measures from other sets of probability measures.
+
+p. 11, therefore the equivalence classes...
+
 
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
