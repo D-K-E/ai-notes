@@ -731,6 +731,19 @@ necessarily non-zero almost everywhere.
 
 Here
 
+- Measure implies, a measure on a set, which is a systematic way to assign a
+  number, most intuitively interpreted as its size, to some subset of that
+  set. In this sense it is a generalization of the concepts of length, area,
+  volume. Let X be a set and S be an algebra over X. **A function $\mu$ from S
+  to the extended real number line is called a measure** if it satisfies the
+  following properties:
+
+  - Non negativity: For all E in S, we have $\mu(E) \ge 0$
+  - Null empty set: $\mu(\empty) = 0$
+  - Countable additivity: for all countable collections ${E_k}_{k=1}^{\infty}$
+    of pairwise disjoint sets in S, 
+    $\mu(\bigcup_{k=1}^{\infty} E_k ) = \sum_{k=1}^{\infty} \mu(E_k)$ 
+
 - *density* probably implies $\sum_k (y_k - x_k)$ in the definition of an
 absolutely continuous function.
 
@@ -800,7 +813,53 @@ Basically the behavior of a set of probability measures when
 transformed by a constant function distinguishes the set of probability
 measures from other sets of probability measures.
 
-p. 11, therefore the equivalence classes...
+
+Simply put in euclidean affine coordinate system we have the equivalence:
+$y = x + b$, $b=\frac{y}{-x}$, thus $y = x + \frac{y}{-x}$ where x,y are
+points that is $x,y \in \mathbb{R}^n$.
+
+We want to have the same kind of relation with probability densities like:
+$p(y) = p(x) + \frac{p(y)}{-p(x)}$, where $p(x), p(y) \in \mathbb{R}^{\Omega}$
+
+Analysis of example 1.4.1:
+
+Example: 
+
+Consider the simple case when $\Omega = {1, 2}$ a set with two elements.
+Consider also a set of random variables $F = {f_1, f_2, \dots,f_i,\dots,
+f_n}$, where each $f_i: \Omega \to \mathbb{R}^2$. 
+We also have a set of measures, $M = {\mu_1, \mu_2, \dots, \mu_i, \dots,
+\mu_n}$ where each $\mu_i: \Omega \to \mathbb{R+}^2$.
+We also have a space, $\mathbb{R}_{\Omega} = \mathbb{R}^2$ resulting from applying the
+functions in F to $\Omega$.
+An affine action, A, of $\mathbb{R}_{\Omega}$ ?? on M is:
+$ A( ( \mu_1({1}), \mu_2({2})), (f_1({1}), f_2({2})) ) = 
+   ( e^{f_1({1})} \mu_1({1}), e^{f_2({2})} \mu_2({2}) ) $
+
+where A can be defined as:
+$A: (\mathbb{R}_{\Omega} \cup M) \to \mathbb{R}^2 $
+
+An affine action is a mapping which has the following properties:
+
+- Right identity: $\forall a \in A, a + 0 = a$ where 0 is the zero vector in
+  the vector space associated to the affine space
+
+- Associativity: 
+  $\forall v,w \in \vec{A}, \forall a \in A, (a+v) + w = a + (v+w)$
+
+- free and transitive action:
+  $\forall a \in A$ the mapping $m: \vec{A} \to A$, $m \to (a+m)$ is a
+  bijection, that is invertible, one-to-one. 
+
+- existence of one-to-one translations:
+  $\forall v \in \vec{A}$ the mapping $k: A \to A$, $k \to (a+k)$ is a
+  bijection.
+
+- subtraction which is the same as free, transitive action:
+  $\forall a,b \in A$ there exists a unique $v \in \vec{A}$, denoted $b-a$,
+  such that $b=a+v$
+
+p. 11, Changing a measure by scale.
 
 
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
